@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles for unix system
+My dotfiles for unix system.
