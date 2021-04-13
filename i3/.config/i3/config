@@ -35,8 +35,10 @@ exec --no-startup-id pnmixer
 
 exec_always --no-startup-id $HOME/.config/polybar/launch
 
+# Autostart ibus 
 exec --no-startup-id $HOME/.local/bin/ibus-autostart
 
+# Start a power manger
 exec --no-startup-id xfce4-power-manager
 
 # Set my wallpaper with nitrogen
@@ -51,12 +53,9 @@ exec_always --no-startup-id lxsession
 # Start the pacmac system tray indicator
 exec_always --no-startup-id pamac-tray
 
+# Set natural scrolling and tap to click
 exec_always --no-startup-id xinput set-prop 13 312 1 
 exec_always --no-startup-id xinput set-prop 13 330 1 
-
-# Mount all the partitions in this hard disk
-exec_always --no-startup-id pkexec mount /dev/mmcblk0p3 /media/ritux/SecondPartition/
-exec_always --no-startup-id pkexec mount /dev/sda1 /media/ritux/Ritchiel/
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
