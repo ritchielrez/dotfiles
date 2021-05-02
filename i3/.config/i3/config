@@ -42,6 +42,8 @@ exec --no-startup-id mate-polkit
 # Start polybar at startup
 # exec --no-startup-id ~/.config/polybar/launch
 
+# Start xfce4-panel at startup
+exec --no-startup-id ~/.config/xfce4/launch
 
 # Enable natural scolling and tap to click
 exec --no-startup-id xinput set-prop 13 314 1
