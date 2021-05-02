@@ -40,7 +40,8 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id mate-polkit
 
 # Start polybar at startup
-exec --no-startup-id ~/.config/polybar/launch
+# exec --no-startup-id ~/.config/polybar/launch
+
 
 # Enable natural scolling and tap to click
 exec --no-startup-id xinput set-prop 13 314 1
