@@ -7,7 +7,7 @@ alias gs="git status"
 alias ga="git add ."
 alias gp="git push -u origin master"
 
-alias todo="nvim ~/.config/zsh/todo.txt"
+alias todo="nvim ~/.config/zsh/todo.zsh"
 
 alias prj="cd ~/Documents/dev/cpp/TestGTK/"
 

@@ -1,7 +1,10 @@
 export PATH="$HOME/local/nvim/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 SAVEHIST=10
 HISTFILE=~/.zsh_history
+
+source $(which shml)
 
 source ~/.config/zsh/aliases.zsh
 

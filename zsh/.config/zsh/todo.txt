@@ -4,6 +4,4 @@
   | || |_| | |_| | |_| |
   |_| \___/|____/ \___/ 
                         
-1. Add zsh and neovim config in dotfiles repo 
-2. Clean uo zsh and neovim config
-3. Install dmenu script 
+
