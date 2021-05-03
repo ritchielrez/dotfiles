@@ -13,6 +13,9 @@ source ~/.config/zsh/aliases.zsh
 # zsh-autosuggestions plugin
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# zsh-syntax-highlighting plugin
+source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # Set oh-my-posh prompt
 eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/slimfat.omp.json
 )"
