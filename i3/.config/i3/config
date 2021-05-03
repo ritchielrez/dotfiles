@@ -205,3 +205,6 @@ bindsym $mod+r mode "resize"
 #bar {
 #       status_command i3status
 #}
+
+# Remove i3wm default titlebar
+for_window [class="^.*"] border pixel 1
