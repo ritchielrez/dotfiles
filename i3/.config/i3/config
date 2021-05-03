@@ -36,6 +36,9 @@ exec --no-startup-id xfce4-power-manager
 # Set the wallpaper
 exec --no-startup-id nitrogen --restore
 
+# Autostart picom compositor
+exec --no-startup-id picom --config ~/.config/awesome/configuration/picom.conf
+
 # Start polkit to let apps like synaptic to get rool privileges
 exec --no-startup-id mate-polkit
 
