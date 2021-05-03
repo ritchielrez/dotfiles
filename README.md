@@ -16,7 +16,7 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 
 ## What to do with dotfiles
 
-There are a hundred ways to manage your dotfiles. Personally, I use the **git, github and gnu stow** for managing my dotfiles. 
+There are a hundred ways to manage your dotfiles. Personally, I use the **Git, Github and GNU Stow** for managing my dotfiles. 
 
 Articles discussing dotfiles management are listed below:
 
