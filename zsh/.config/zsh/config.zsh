@@ -1,8 +1,10 @@
 export PATH="$HOME/local/nvim/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
-SAVEHIST=10
 HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=1000
+setopt SHARE_HISTORY
 
 source $(which shml)
 
