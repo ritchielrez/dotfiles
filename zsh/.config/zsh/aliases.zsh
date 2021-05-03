@@ -14,6 +14,8 @@ alias prj="cd ~/Documents/dev/cpp/TestGTK/"
 alias ls="exa"
 alias ll="exa -la"
 
+alias yt="youtube-dl"
+
 # apt aliases
 (( $+commands[apt] )) && APT=apt || APT=apt-get
 
