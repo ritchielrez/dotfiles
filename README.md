@@ -16,11 +16,52 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 
 ## Configs of mine: 
 
-1. i3
+1. i3-gaps
 2. polybar ( *I don't use it anymore* )
 3. neovim ( *for c++ development* )
 4. normal vim
 5. zsh ( *with zsh-autosuggestions, zsh-syntax-highlighting* )
+
+
+
+## How to install all of these programs?
+
+**For i3-gaps: **
+
+```shell
+sudo add-apt-repository -y ppa:regolith-linux/stable
+sudo apt install i3-gaps
+```
+
+**For polybar:**
+
+```shell
+sudo apt install polybar
+```
+
+**For neovim:**
+
+```shell
+sudo apt install neovim
+```
+
+**For neovim plugins:**
+
+```shell
+sudo apt install nodejs npm
+```
+
+**For vim:**
+
+```shell
+sudo apt install vim
+```
+
+**For zsh:**
+
+```shell
+sudo apt install zsh
+```
 
 
 
