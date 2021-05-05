@@ -17,7 +17,7 @@ super + shift + d
    dmenu run
 
 super + d
-    rofi -show drun
+    rofi -show drun -dpi 1.25
 
 super + c
   clipmenu
