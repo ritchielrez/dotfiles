@@ -1,0 +1,129 @@
+super + Escape
+    pkill -USR1 -x sxhkd
+
+# Reload sxhkdrc
+super + ctrl + r
+    pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+super + Return
+   tilix
+
+super + shift + Return
+    pcmanfm
+
+#Rofi & dmenu
+
+super + shift + d 
+   dmenu run
+
+super + d
+    rofi -show drun
+
+super + c
+  clipmenu
+
+super + e 
+    rofi -show emoji -modi emoji
+
+alt + p
+    rofi -show
+
+# Application Keybindings
+
+super + w
+    firefox
+
+super + a
+   dmconf
+
+super + s
+   dmsearch
+
+ctrl + shift + Escape
+    tilix -e htop
+
+alt + s
+    todoist
+
+alt + z
+    zim
+
+alt + m
+    alacritty 'neomutt' -e neomutt
+
+alt + n
+    ferdi
+
+alt + t 
+    telegram-desktop
+
+ctrl + alt + s
+    xfce4-screenshooter
+
+alt + l
+  lotion
+
+ctrl + alt + n
+    termite 'ncmpcpp' -e ncmpcpp
+
+#Audio Keybindings
+
+XF86AudioRaiseVolume
+        amixer -c 1 -- sset Master 2db+
+
+XF86AudioLowerVolume
+        amixer -c 1 -- sset Master 2db-
+
+XF86AudioMute
+        amixer -c 1 -- sset Master toggle
+
+alt + d
+        amixer -c 1 -- sset Master 2db+
+
+alt + a
+        amixer -c 1 -- sset Master 2db-
+
+XF86AudioPlay
+    playerctl play-pause
+
+ctrl + alt + p
+    playerctl play-pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
+
+ctrl + shift + period
+    playerctl next
+
+ctrl + shift + comma
+    playerctl previous
+
+XF86AudioStop
+    playerctl stop
+
+alt + {h,j,k,l}
+   mpc {prev,next,play,pause}
+
+# quit/restart bspwm
+super + shift + {q,r}
+    bspc {quit,wm -r}
+
+# close a window
+super + q
+    bspc node -c
+
+# move workspace
+super + {1,2,3,4,5,6,7,8,9}
+    bspc desktop -f {1,2,3,4,5,6,7,8,9}
+
+# move focused window to the next workspace and then switch to that workspace
+super + shift + {Left,Right}
+    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
+
+# send to desktop
+super + shift + {1-9,0}
+    bspc node -d '^{1-9,10}' --follow
+
