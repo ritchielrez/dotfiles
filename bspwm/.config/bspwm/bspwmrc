@@ -33,10 +33,10 @@ mate-polkit &
 dunst &
 
 # Tap to click
-xinput set-prop 13 332 1
+xinput set-prop 12 314 1
 
 # Natural Scrolling
-xinput set-prop 13 314 1
+xinput set-prop 12 322 1
 
 # Network Manger applet
 nm-applet &
