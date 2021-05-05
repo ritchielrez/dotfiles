@@ -6,7 +6,7 @@
     <value type="int" value="1"/>
     <property name="dark-mode" type="bool" value="true"/>
     <property name="panel-1" type="empty">
-      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="position" type="string" value="p=6;x=960;y=19"/>
       <property name="length" type="uint" value="100"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="icon-size" type="uint" value="37"/>
@@ -32,7 +32,7 @@
   </property>
   <property name="plugins" type="empty">
     <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="button-icon" type="string" value="distributor-logo-ubuntu"/>
+      <property name="button-icon" type="string" value="distributor-logo-archlinux"/>
       <property name="show-button-title" type="bool" value="false"/>
       <property name="show-tooltips" type="bool" value="true"/>
       <property name="show-generic-names" type="bool" value="false"/>
@@ -50,6 +50,8 @@
         <value type="string" value="nm-applet"/>
       </property>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="polkit-mate-authentication-agent-1"/>
+        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="network"/>
         <value type="string" value="ibus panel"/>
         <value type="string" value="pnmixer"/>
