@@ -31,7 +31,19 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 
 ## How to install all of these programs?
 
-**For i3-gaps: **
+**For bspwm and sxhkd:**
+
+```shell
+sudo apt install bspwm
+```
+
+**For xfce4-panel:**
+
+```shell
+sudo apt install xfce4-panel
+```
+
+**For i3-gaps:**
 
 ```shell
 sudo add-apt-repository -y ppa:regolith-linux/stable
