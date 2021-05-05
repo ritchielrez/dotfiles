@@ -47,9 +47,6 @@ pnmixer &
 # Power manager for laptop battery power management
 xfce4-power-manager &
 
-# For alt+tab window switching
-alttab &
-
 # Xfce4-panel
 ~/.config/xfce4/launch &
 
