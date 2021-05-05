@@ -13,9 +13,6 @@ super + shift + Return
 
 #Rofi & dmenu
 
-super + shift + d 
-   dmenu run
-
 super + d
     rofi -show drun -dpi 1.25
 
