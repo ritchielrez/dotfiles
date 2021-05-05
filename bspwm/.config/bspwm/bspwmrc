@@ -1,0 +1,57 @@
+#!/usr/bin/env bash
+
+# Workspaces
+bspc monitor -d 1 2 3 4 5 6 7 8 9
+
+# Window gap and padding
+bspc config window_gap 10
+
+bspc config split_ratio 0.5
+bspc config borderless_monocle true
+bspc config gapless_monocle true
+
+# Kill running processes
+killall sxhkd
+killall pnmixer
+killall nm-applet
+killall picom
+killall dunst
+
+# Key binding daemon
+sxhkd &
+
+# Wallpaper
+nitrogen --restore &
+
+# Compositor
+picom &
+
+# Authentication
+mate-polkit &
+
+# Notifications
+dunst &
+
+# Tap to click
+xinput set-prop 13 332 1
+
+# Natural Scrolling
+xinput set-prop 13 314 1
+
+# Network Manger applet
+nm-applet &
+
+# Sound applet
+pnmixer &
+
+# Power manager for laptop battery power management
+xfce4-power-manager &
+
+# For alt+tab window switching
+alttab &
+
+# Xfce4-panel
+~/.config/xfce4/launch &
+
+# Emacs daemon server 
+emacs --daemon &
