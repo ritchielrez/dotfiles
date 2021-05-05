@@ -17,10 +17,12 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 ## Configs of mine: 
 
 1. i3-gaps
-2. polybar ( *I don't use it anymore* )
-3. neovim ( *for c++ development* )
-4. normal vim
-5. zsh ( *with zsh-autosuggestions, zsh-syntax-highlighting* )
+2. xfce4-panel
+3. dunst ( *notification daemon* )
+4. polybar ( *I don't use it anymore* )
+5. neovim ( *for c++ development* )
+6. vim
+7. zsh ( *with zsh-autosuggestions, zsh-syntax-highlighting* )
 
 
 
