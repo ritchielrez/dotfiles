@@ -1,6 +1,8 @@
 export PATH="$HOME/local/nvim/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
+export EDITOR="vim"
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000
