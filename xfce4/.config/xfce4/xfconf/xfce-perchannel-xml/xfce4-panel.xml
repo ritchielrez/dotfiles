@@ -27,7 +27,10 @@
         <value type="int" value="14"/>
         <value type="int" value="8"/>
       </property>
-      <property name="background-style" type="uint" value="0"/>
+      <property name="background-style" type="uint" value="2"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="true"/>
+      <property name="background-image" type="string" value="/home/ritux/Pictures/Wallpapers/F_20210108165071PnmTna.JPG"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -94,7 +97,7 @@
       </property>
       <property name="round" type="bool" value="true"/>
       <property name="single-row" type="bool" value="true"/>
-      <property name="tooltip-style" type="int" value="1"/>
+      <property name="tooltip-style" type="int" value="0"/>
       <property name="forecast" type="empty">
         <property name="layout" type="int" value="1"/>
         <property name="days" type="int" value="5"/>
