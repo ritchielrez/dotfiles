@@ -28,7 +28,7 @@
         <value type="int" value="8"/>
       </property>
       <property name="background-style" type="uint" value="2"/>
-      <property name="autohide-behavior" type="uint" value="0"/>
+      <property name="autohide-behavior" type="uint" value="1"/>
       <property name="disable-struts" type="bool" value="true"/>
       <property name="background-image" type="string" value="/home/ritux/Pictures/Wallpapers/F_20210108165071PnmTna.JPG"/>
     </property>
