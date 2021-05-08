@@ -5,3 +5,7 @@ source ~/.config/nvim/coc-settings.vim
 
 " Color scheme
 colorscheme gruvbox
+highlight Normal     ctermbg=NONE guibg=NONE
+highlight LineNr     ctermbg=NONE guibg=NONE
+highlight SignColumn ctermbg=NONE guibg=NONE
+

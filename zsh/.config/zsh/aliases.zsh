@@ -9,7 +9,14 @@ alias md="mkdir"
 
 alias gs="git status"
 alias ga="git add ."
-alias gp="git push -u origin master"
+alias gp="git push -u --force origin master"
+
+function gacp()
+{
+	git add .
+	git commit -m "$1"
+	git push -u --force origin master
+}
 
 alias todo="nvim ~/.config/zsh/todo.zsh"
 
