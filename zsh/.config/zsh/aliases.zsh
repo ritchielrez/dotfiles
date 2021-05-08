@@ -2,6 +2,7 @@ alias zshconf="nvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
 alias e="exit"
+alias t="tmux"
 
 alias dots="cd ~/Documents/repos/dotfiles"
 
