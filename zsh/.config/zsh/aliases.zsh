@@ -1,6 +1,8 @@
 alias zshconf="nvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
+alias e="exit"
+
 alias dots="cd ~/Documents/repos/dotfiles"
 
 alias md="mkdir"
