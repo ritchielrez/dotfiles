@@ -19,8 +19,11 @@ source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set oh-my-posh prompt
-eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/slimfat.omp.json
-)"
+#eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/slimfat.omp.json
+#)"
+
+# Set powerlevel10k prompt
+source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 source ~/.config/zsh/autostart.zsh
 
