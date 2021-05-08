@@ -3,6 +3,8 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export EDITOR="vim"
 
+export TERM=xterm-256color
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000
