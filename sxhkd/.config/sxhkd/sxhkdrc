@@ -6,7 +6,7 @@ super + ctrl + r
     pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
 
 super + Return
-   tilix
+   alacritty
 
 super + shift + Return
     pcmanfm
@@ -37,7 +37,7 @@ super + s
    dmsearch
 
 ctrl + shift + Escape
-    tilix -e htop
+    alacritty -e htop
 
 alt + s
     todoist
