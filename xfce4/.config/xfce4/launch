@@ -1,2 +1,11 @@
-killall xfce4-panel
-xfce4-panel --disable-wm-check
+#!/bin/sh
+
+#set -euo pipefail
+
+isrunning=$(pgrep -a xfce4-panel)
+
+if [[ "$isrunning" != "" ]]; then
+	exit
+else
+	xfce4-panel --disable-wm-check
+fi
