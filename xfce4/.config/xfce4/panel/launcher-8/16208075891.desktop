@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Exec=xfce4-appfinder
-Icon=distributor-logo-blackarch
+Icon=distributor-logo-archlinux
 StartupNotify=true
 Terminal=false
 Type=Application
