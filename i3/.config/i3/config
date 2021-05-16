@@ -51,10 +51,6 @@ exec --no-startup-id mate-polkit
 # Start xfce4-panel at startup
 exec --no-startup-id ~/.config/xfce4/launch
 
-# Enable natural scolling and tap to click
-exec --no-startup-id xinput set-prop 13 314 1
-exec --no-startup-id xinput set-prop 13 332 1
-
 # Start the emacs server daemon
 exec --no-startup-id emacs --daemon
 
