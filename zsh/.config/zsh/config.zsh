@@ -1,4 +1,4 @@
-export PATH="$HOME/local/nvim/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/Applications:$PATH"
 export PATH="$HOME/Applications/nvim/bin:$PATH"
