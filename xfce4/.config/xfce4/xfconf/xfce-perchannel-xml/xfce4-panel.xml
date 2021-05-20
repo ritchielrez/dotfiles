@@ -18,7 +18,6 @@
         <value type="int" value="4"/>
         <value type="int" value="3"/>
         <value type="int" value="6"/>
-        <value type="int" value="9"/>
         <value type="int" value="11"/>
         <value type="int" value="12"/>
         <value type="int" value="13"/>
@@ -38,14 +37,18 @@
         <value type="string" value="networkmanager applet"/>
         <value type="string" value="pnmixer"/>
       </property>
+      <property name="names-ordered" type="array">
+        <value type="string" value="sayonara"/>
+        <value type="string" value="strawberry"/>
+      </property>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
     <property name="plugin-11" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
     <property name="plugin-12" type="string" value="clock">
-      <property name="tooltip-format" type="string" value="%_d %b, %I:%M %p"/>
-      <property name="digital-format" type="string" value="%a %_d %b, %I:%M %p"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
+      <property name="digital-format" type="string" value="%I:%M %p"/>
     </property>
     <property name="plugin-13" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
