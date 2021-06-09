@@ -4,6 +4,7 @@ export PATH="$HOME/Applications:$PATH"
 export PATH="$HOME/Applications/nvim/bin:$PATH"
 export PATH="$HOME/Applications/nvim-linux64/bin/:$PATH"
 export PATH="$HOME/Documents/repos/picom/build/src:$PATH"
+export PATH="$HOME/Downloads/node-v16.3.0-linux-x64/bin:$PATH"
 
 export EDITOR="vim"
 

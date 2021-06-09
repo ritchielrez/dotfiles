@@ -23,6 +23,7 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
         <value type="int" value="7"/>
+        <value type="int" value="5"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="1"/>
@@ -40,6 +41,7 @@
         <value type="string" value="pnmixer"/>
       </property>
       <property name="names-ordered" type="array">
+        <value type="string" value="obs"/>
         <value type="string" value="ibus panel"/>
         <value type="string" value="ibus-ui-gtk3"/>
         <value type="string" value="zoom"/>
@@ -78,5 +80,6 @@
     <property name="plugin-2" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
+    <property name="plugin-5" type="string" value="power-manager-plugin"/>
   </property>
 </channel>
