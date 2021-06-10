@@ -41,6 +41,7 @@
         <value type="string" value="pnmixer"/>
       </property>
       <property name="names-ordered" type="array">
+        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="obs"/>
         <value type="string" value="ibus panel"/>
         <value type="string" value="ibus-ui-gtk3"/>

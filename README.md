@@ -23,7 +23,7 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 5. picom ( *compositor* )
 6. sxhkd ( *hotkey daemon* )
 7. polybar ( *I don't use it anymore* )
-8. neovim ( *for c++ development* )
+8. neovim ( *for python development* )
 9. vim
 10. zsh ( *with zsh-autosuggestions, zsh-syntax-highlighting* )
 
