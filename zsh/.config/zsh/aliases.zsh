@@ -12,6 +12,12 @@ alias gs="git status"
 alias ga="git add ."
 alias gp="git push -u --force origin master"
 
+function gac()
+{
+    git add .
+    git commit -m "$1"
+}
+
 function gacp()
 {
 	git add .
