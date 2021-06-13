@@ -24,7 +24,7 @@
         <value type="int" value="5"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
-      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="autohide-behavior" type="uint" value="0"/>
       <property name="background-image" type="string" value="/home/ritux/Documents/repos/wallpapers/maller/apple-dreams.jpg"/>
     </property>
   </property>
