@@ -13,6 +13,7 @@
       <property name="size" type="uint" value="39"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="8"/>
+        <value type="int" value="1"/>
         <value type="int" value="4"/>
         <value type="int" value="3"/>
         <value type="int" value="6"/>
@@ -77,5 +78,8 @@
       </property>
     </property>
     <property name="plugin-5" type="string" value="power-manager-plugin"/>
+    <property name="plugin-1" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
   </property>
 </channel>
