@@ -14,7 +14,7 @@ super + shift + Return
 #Rofi & dmenu
 
 super + d
-    rofi -show drun -dpi 1.25
+    rofi -show-icons -show drun -dpi 1.25
 
 super + c
   clipmenu

@@ -31,7 +31,7 @@ sxhkd &
 
 # Wallpaper
 # nitrogen --restore &
-wpg -s /home/ritux/Documents/repos/wallpapers/maller/awake.jpg
+wpg -s /home/ritux/Documents/repos/wallpapers/maller/pyramid.jpg
 
 # Compositor
 picom &
