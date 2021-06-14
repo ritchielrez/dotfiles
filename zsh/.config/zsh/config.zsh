@@ -16,6 +16,10 @@ HISTSIZE=10000
 SAVEHIST=1000
 setopt SHARE_HISTORY
 
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 source $(which shml)
 
 source ~/.config/zsh/aliases.zsh
