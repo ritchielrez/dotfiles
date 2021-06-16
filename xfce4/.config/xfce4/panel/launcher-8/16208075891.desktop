@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Exec=xfce4-appfinder
-Icon=start-here-kde-neon
+Icon=taskbar
 StartupNotify=true
 Terminal=false
 Type=Application

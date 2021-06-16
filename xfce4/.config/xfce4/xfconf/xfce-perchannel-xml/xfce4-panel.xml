@@ -22,7 +22,6 @@
         <value type="int" value="13"/>
         <value type="int" value="14"/>
         <value type="int" value="7"/>
-        <value type="int" value="5"/>
       </property>
       <property name="background-style" type="uint" value="0"/>
       <property name="autohide-behavior" type="uint" value="0"/>
@@ -51,6 +50,10 @@
         <value type="string" value="pnmixer"/>
         <value type="string" value="sayonara"/>
         <value type="string" value="strawberry"/>
+      </property>
+      <property name="known-items" type="array">
+        <value type="string" value="discord1"/>
+        <value type="string" value="zoom"/>
       </property>
     </property>
     <property name="plugin-9" type="string" value="power-manager-plugin"/>
