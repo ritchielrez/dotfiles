@@ -8,6 +8,7 @@ export PATH="$HOME/Downloads/node/bin:$PATH"
 export PATH="$HOME/.local/share/nvim/lspinstall/cpp/clangd/bin:$PATH"
 export PATH="/mnt/c/Applications/exa-linux-x86_64-v0.10.1/bin:$PATH"
 export PATH="/mnt/c/Applications/node-v16.3.0-linux-x64/bin:$PATH"
+export PATH="~/.emacs.d/bin/:$PATH"
 
 export EDITOR="vim"
 

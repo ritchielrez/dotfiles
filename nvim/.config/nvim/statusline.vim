@@ -10,7 +10,7 @@ set statusline+=%#GruvboxGreenSign#
 set statusline+=\%y
 set statusline+=%#GruvboxYellowSign#
 set statusline+=\ %r
-set statusline+=\ (%f)
+set statusline+=\ <%f>
 set statusline+=%=
 set statusline+=%#GruvboxBlueSign#
 set statusline+=\ %c:%l/%L
