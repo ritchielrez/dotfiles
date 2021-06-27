@@ -10,16 +10,14 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-Plug 'RishabhRD/popfix'
-
-Plug 'nvim-lua/popup.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+" Plug 'nvim-lua/popup.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
 
 """ Vim status line """
 """""""""""""""""""""""
 """""""""""""""""""""""
-Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline'
 
 
 """ Markdown """
