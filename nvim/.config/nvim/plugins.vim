@@ -44,7 +44,7 @@ Plug 'arcticicestudio/nord-vim'
 """""""""""""""
 """""""""""""""
 " For lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
 """ Syntax highlighting """
