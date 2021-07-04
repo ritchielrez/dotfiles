@@ -29,8 +29,8 @@ alias todo="nvim ~/.config/zsh/todo.zsh"
 
 alias prj="cd ~/Documents/dev/cpp/TestGTK/"
 
-alias ls="exa"
-alias ll="exa -la"
+alias ls="exa --icons --git"
+alias ll="exa -la --icons --git"
 
 alias yt="youtube-dl"
 

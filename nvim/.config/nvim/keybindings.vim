@@ -24,6 +24,4 @@ autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
 autocmd FileType cs nnoremap <buffer> <Leader>fi :OmniSharpFindImplementations<CR>
 autocmd FileType cs nnoremap <Leader><Space> :OmniSharpGetCodeActions<CR>
 
-autocmd FileType ts nmap <silent> gd :call CocActionAsync('jumpDefinition')<CR>
-autocmd FileType html nmap <silent> gd :call CocActionAsync('jumpDefinition')<CR>
 

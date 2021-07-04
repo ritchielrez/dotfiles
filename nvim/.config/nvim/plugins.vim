@@ -36,8 +36,6 @@ Plug 'plasticboy/vim-markdown'
 """"""""""""""""""""
 " Gruvbox color scheme
 Plug 'https://github.com/morhetz/gruvbox.git'
-" Nord color scheme
-Plug 'arcticicestudio/nord-vim'
 
 
 """ For lsp """
@@ -58,6 +56,8 @@ Plug 'jiangmiao/auto-pairs'
 """"""""""""""""""""
 """"""""""""""""""""
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 
 """ Syntax highlighting """
