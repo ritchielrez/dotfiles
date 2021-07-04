@@ -40,11 +40,24 @@ Plug 'https://github.com/morhetz/gruvbox.git'
 Plug 'arcticicestudio/nord-vim'
 
 
-""" Coc lsp """
+""" For lsp """
 """""""""""""""
 """""""""""""""
-" For lsp
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neovim/nvim-lspconfig'
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
+
+
+""" For auto pairs """
+""""""""""""""""""""""
+""""""""""""""""""""""
+Plug 'jiangmiao/auto-pairs'
+
+""" For explorer """
+""""""""""""""""""""
+""""""""""""""""""""
+Plug 'preservim/nerdtree'
 
 
 """ Syntax highlighting """
