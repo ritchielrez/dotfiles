@@ -66,5 +66,10 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 " For better syntax highlighting
 Plug 'sheerun/vim-polyglot'
 
+""" For AHK """
+"""""""""""""""
+"""""""""""""""
+Plug 'rcmdnk/vim_ahk'
+
 
 call plug#end()
