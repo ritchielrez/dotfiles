@@ -5,3 +5,13 @@ cd ~/Documents/dev/cpp/GTKTut2
 
 # Set wgtk color scheme in zsh
 (cat ~/.cache/wal/sequences &)
+
+# Autostart tmux
+
+# Automatically start TMUX, if it's not set
+
+if [[ ! -v ZSH_TMUX_AUTOSTART ]]; then
+
+    export ZSH_TMUX_AUTOSTART=true
+
+fi

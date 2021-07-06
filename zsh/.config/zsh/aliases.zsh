@@ -10,6 +10,7 @@ alias md="mkdir"
 
 alias gs="git status"
 alias ga="git add ."
+alias gc="git commit -m"
 alias gp="git push -u --force origin master"
 
 function gac()
