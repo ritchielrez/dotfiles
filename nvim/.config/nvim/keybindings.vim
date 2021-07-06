@@ -18,6 +18,11 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+nnoremap <C-l> <C-w><Right>
+nnoremap <C-h> <C-w><Left>
+nnoremap <C-k> <C-w><Up>
+nnoremap <C-j> <C-w><Down>
+
 xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 
