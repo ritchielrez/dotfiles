@@ -18,6 +18,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+xnoremap K :move '<-2<CR>gv-gv
+xnoremap J :move '>+1<CR>gv-gv
+
 " Supprot for different goto definitions for different file types.
 autocmd FileType cs nmap <silent> gd :OmniSharpGotoDefinition<CR>
 autocmd FileType cs nnoremap <buffer> <Leader>fu :OmniSharpFindUsages<CR>
