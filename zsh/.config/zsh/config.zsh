@@ -10,7 +10,7 @@ export PATH="/mnt/c/Applications/exa-linux-x86_64-v0.10.1/bin:$PATH"
 export PATH="/mnt/c/Applications/node/bin:$PATH"
 export PATH="~/.emacs.d/bin/:$PATH"
 
-export EDITOR="vim"
+export EDITOR="nvim"
 
 export TERM=xterm-256color
 
@@ -34,7 +34,10 @@ source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set oh-my-posh prompt
-eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/marcduiker.omp.json)"
+# eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/marcduiker.omp.json)"
+
+# Set startship prompt
+eval "$(starship init zsh)"
 
 # Set powerlevel10k prompt
 # source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
