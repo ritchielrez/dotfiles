@@ -7,12 +7,12 @@ call plug#begin('~/.vim/plugged')
 """ Plugins for fzf file searcher """
 """""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf.vim'
 
-" Plug 'nvim-lua/popup.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 
 """ Vim status line """
 """""""""""""""""""""""
@@ -37,6 +37,9 @@ Plug 'tpope/vim-markdown'
 " Gruvbox color scheme
 Plug 'https://github.com/morhetz/gruvbox.git'
 
+"NVCode color scheme
+Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
+
 
 """ For lsp """
 """""""""""""""
@@ -45,6 +48,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'neovim/nvim-lspconfig'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
+
+""" For parsing """
+"""""""""""""""""""
+"""""""""""""""""""
+Plug 'nvim-treesitter/nvim-treesitter'
 
 
 """ For auto pairs """
