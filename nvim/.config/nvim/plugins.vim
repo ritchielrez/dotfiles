@@ -46,7 +46,6 @@ Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 """""""""""""""
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Plug 'neovim/nvim-lspconfig'
-Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 
 """ For parsing """
