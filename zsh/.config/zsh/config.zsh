@@ -42,9 +42,12 @@ source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set powerlevel10k prompt
 # source ~/.config/zsh/themes/robbyrussell.zsh-theme
+
 fpath+=$HOME/.zsh/pure
 
 source ~/.config/zsh/autostart.zsh
 
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# prompt pure
+
+source ~/.config/zsh/themes/zsh-prompt.zsh-theme
