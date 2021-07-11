@@ -17,5 +17,5 @@
 # fi
 
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~ ${GITSTATUS_PROMPT}%(?.%B%F{63}❯ .%B%F{#E06C75}❌ % '
+PROMPT='%F{blue}%~ $(git_super_status)%(?.%B%F{63}❯ .%B%F{#E06C75}❌ % '
 

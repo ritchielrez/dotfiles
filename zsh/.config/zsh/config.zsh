@@ -35,6 +35,7 @@ source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.config/zsh/plugins/gitstatus/gitstatus.prompt.zsh
+source ~/.config/zsh/plugins/zsh-git-prompt/zshrc.sh
 
 # Set oh-my-posh prompt
 # eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/marcduiker.omp.json)"
