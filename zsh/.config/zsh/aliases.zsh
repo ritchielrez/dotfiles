@@ -1,6 +1,8 @@
 alias zshconf="nvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
+alias cls="clear"
+
 alias e="exit"
 alias t="tmux"
 
