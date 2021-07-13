@@ -36,14 +36,18 @@ source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # zsh-syntax-highlighting plugin
 source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# source ~/.config/zsh/plugins/zsh-git-prompt/zshrc.sh
+
+# source ~/.config/zsh/themes/zsh-prompt.zsh-theme
+
 # Set oh-my-posh prompt
 # eval "$(oh-my-posh --init --shell zsh --config /home/ritux/.poshthemes/marcduiker.omp.json)"
 
 # Set startship prompt
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
 
 # Set powerlevel10k prompt
-# source ~/.config/zsh/themes/robbyrussell.zsh-theme
+source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 fpath+=$HOME/.zsh/pure
 

@@ -17,5 +17,5 @@
 # fi
 
 setopt PROMPT_SUBST
-PROMPT='%F{blue}%~ %(?.%B%F{63}❯ .%B%F{#E06C75}❌ % '
+RPROMPT='%F{blue}%~ %(?.%B%F{63}❯ .%B%F{#E06C75}❌ % '
 
