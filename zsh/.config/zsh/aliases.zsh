@@ -3,6 +3,8 @@ alias so="source ~/.zshrc"
 
 alias cls="clear"
 
+alias config='/usr/bin/git --git-dir=/mnt/c/Repos/dotfiles-new --work-tree=$HOME'
+
 alias e="exit"
 alias t="tmux"
 

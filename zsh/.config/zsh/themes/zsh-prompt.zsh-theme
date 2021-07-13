@@ -17,5 +17,5 @@
 # fi
 
 setopt PROMPT_SUBST
-RPROMPT='%F{blue}%~ %(?.%B%F{63}❯ .%B%F{#E06C75}❌ % '
+PROMPT='%F{#434C5E}[%F{#D787D7}%n %F{#D08770}in %F{blue}%~%F{#346E75}$GITSTATUS_PROMPT%F{#434C5E}] %(?.%B%F{63}❯ .%B%F{#E06C75}X % '
 
