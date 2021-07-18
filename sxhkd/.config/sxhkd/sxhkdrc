@@ -14,13 +14,13 @@ super + shift + Return
 #Rofi & dmenu
 
 super + d
-    rofi -show-icons -show drun -dpi 1.25
+    rofi -font "FiraCode NF 12" -show-icons -show drun -dpi 1.25
 
 super + c
   clipmenu
 
 super + e 
-    rofi -show emoji -modi emoji
+    rofi -font "FiraCode NF 12" -show emoji -modi emoji -dpi 1.25
 
 alt + p
     rofi -show
@@ -51,8 +51,8 @@ alt + m
 alt + n
     ferdi
 
-alt + t 
-    telegram-desktop
+alt + d 
+    bitwarden
 
 ctrl + alt + s
     xfce4-screenshooter

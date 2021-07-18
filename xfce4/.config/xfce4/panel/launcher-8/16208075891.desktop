@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
-Exec=xfce4-appfinder
-Icon=org.xfce.panel.applicationsmenu
+Exec=rofi -font "FiraCode NF 12" -show-icons -show drun -dpi 1.25
+Icon=kali-menu
 StartupNotify=true
 Terminal=false
 Type=Application
