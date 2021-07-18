@@ -31,9 +31,9 @@ alttab &
 sxhkd &
 
 # Wallpaper
-# nitrogen --restore &
+nitrogen --restore &
 # wpg -s /home/ritux/Documents/repos/wallpapers/maller/pyramid.jpg
-feh --bg-scale ~/Documents/repos/wallpapers/maller/pyramid.jpg
+# feh --bg-scale ~/Documents/repos/wallpapers/maller/pyramid.jpg
 
 # Compositor
 picom &
