@@ -39,7 +39,7 @@ nitrogen --restore &
 picom &
 
 # Authentication
-mate-polkit &
+lxsession &
 
 # Notifications
 dunst &
