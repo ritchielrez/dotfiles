@@ -1,6 +1,8 @@
 alias zshconf="nvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
+alias sc="cd ~/Pictures/Screenshots"
+
 alias cls="clear"
 
 alias config='/usr/bin/git --git-dir=/mnt/c/Repos/dotfiles-new --work-tree=$HOME'

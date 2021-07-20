@@ -1,10 +1,10 @@
-cat ~/.config/zsh/todo.txt
-source ~/.config/zsh/todo.zsh
+# cat ~/.config/zsh/todo.txt
+# source ~/.config/zsh/todo.zsh
 cd ~
 # wpg -s /home/ritux/Documents/repos/wallpapers/maller/awake.jpg ; clear
 
 # Set wgtk color scheme in zsh
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 # Autostart tmux
 
@@ -16,3 +16,4 @@ if [[ ! -v ZSH_TMUX_AUTOSTART ]]; then
 
 fi
 
+colorscript -r

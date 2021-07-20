@@ -2,6 +2,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/Applications:$PATH"
 export PATH="$HOME/Applications/nvim/bin:$PATH"
+export PATH="$HOME/Applications/auto-cpufreq/bin:$PATH"
 export PATH="$HOME/Applications/nvim-linux64/bin/:$PATH"
 export PATH="$HOME/Documents/repos/picom/build/src:$PATH"
 export PATH="$HOME/Downloads/node/bin:$PATH"
@@ -26,7 +27,7 @@ setopt SHARE_HISTORY
   # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 # fi
 
-source $(which shml)
+# source $(which shml)
 
 source ~/.config/zsh/aliases.zsh
 

@@ -28,13 +28,13 @@ alt + p
 # Application Keybindings
 
 super + w
-   brave
+   firefox
 
 super + a
    dmconf
 
 super + s
-   dmsearch
+    ~/.local/bin/dmsearch
 
 ctrl + shift + Escape
     alacritty -e htop
@@ -51,11 +51,11 @@ alt + m
 alt + n
     ferdi
 
-alt + d 
+super + b 
     bitwarden
 
 ctrl + alt + s
-    xfce4-screenshooter
+    flameshot gui
 
 alt + l
   lotion
@@ -66,13 +66,13 @@ ctrl + alt + n
 #Audio Keybindings
 
 XF86AudioRaiseVolume
-        amixer -c 1 -- sset Master 2db+
+        pactl set-sink-volume 0 +5%
 
 XF86AudioLowerVolume
-        amixer -c 1 -- sset Master 2db-
+        pactl set-sink-volume 0 -5%
 
 XF86AudioMute
-        amixer -c 1 -- sset Master toggle
+        pactl set-sink-mute 0 toggle
 
 alt + d
         amixer -c 1 -- sset Master 2db+
@@ -126,10 +126,13 @@ super + shift + {1-9,0}
 
 # Expand/contract a window by moving one of its side outward/inward
 super + r : {Left,Down,Up,Right}
-    STEP=20; SELECTION={1,2,3,4}; \
+    notify-send 'resize'; STEP=20; SELECTION={1,2,3,4}; \
     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
-# Clear the memory cache 
-ctrl + 1
-    clearcache.sh
+# Change window states
+super + {t,shift + t,s,f}
+  bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+    
+
