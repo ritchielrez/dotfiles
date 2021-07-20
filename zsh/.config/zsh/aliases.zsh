@@ -6,6 +6,8 @@ alias sc="cd ~/Pictures/Screenshots"
 alias cls="clear"
 
 alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
 
 alias grep="grep --color=auto"
 
