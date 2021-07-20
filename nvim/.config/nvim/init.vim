@@ -111,10 +111,10 @@ EOF
 " vnoremap <leader><space> :lua vim.lsp.buf.range_code_action()<CR>
 " nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<CR>
 
-inoremap <expr><tab> coc#refresh()
+inoremap <expr><C-j> coc#refresh()
 
 " Colorscheme
-colorscheme onedark
+colorscheme gruvbox
 highlight Normal     ctermbg=NONE guibg=NONE
 highlight LineNr     ctermbg=NONE guibg=NONE
 highlight SignColumn ctermbg=NONE guibg=NONE
