@@ -20,7 +20,7 @@ killall pnmixer
 killall nm-applet
 killall picom
 killall dunst
-killall xfce4-panel
+# killall xfce4-panel
 # killall polybar
 killall alttab
 killall ibus-daemon
@@ -58,7 +58,7 @@ xfce4-power-manager &
 # ~/.config/xfce4/launch &
 
 # Polybar
-# polybar mainbar-bspwm &
+~/.config/polybar/awesome.sh
 
 # Emacs daemon server 
 emacs --daemon &
