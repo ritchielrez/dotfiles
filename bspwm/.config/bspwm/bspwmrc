@@ -23,6 +23,7 @@ killall dunst
 killall xfce4-panel
 # killall polybar
 killall alttab
+killall ibus-daemon
 
 # Window switcher
 alttab &
@@ -54,10 +55,13 @@ pnmixer &
 xfce4-power-manager &
 
 # Xfce4-panel
-~/.config/xfce4/launch &
+# ~/.config/xfce4/launch &
 
 # Polybar
 # polybar mainbar-bspwm &
 
 # Emacs daemon server 
 emacs --daemon &
+
+# Start ibus
+ibus-daemon &
