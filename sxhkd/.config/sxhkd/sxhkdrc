@@ -60,19 +60,22 @@ ctrl + alt + s
 alt + l
   lotion
 
-ctrl + alt + n
-    termite 'ncmpcpp' -e ncmpcpp
+alt + 4
+    ~/.local/bin/powermenu
+
+alt + m
+    alacritty -e ncmpcpp
 
 #Audio Keybindings
 
 XF86AudioRaiseVolume
-        pactl set-sink-volume 0 +5%
+    pactl set-sink-volume 0 +5%
 
 XF86AudioLowerVolume
-        pactl set-sink-volume 0 -5%
+    pactl set-sink-volume 0 -5%
 
 XF86AudioMute
-        pactl set-sink-mute 0 toggle
+    pactl set-sink-mute 0 toggle
 
 alt + d
         amixer -c 1 -- sset Master 2db+

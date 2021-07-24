@@ -2,8 +2,11 @@ alias zshconf="nvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
 alias sc="cd ~/Pictures/Screenshots"
+alias dot="cd ~/dotfiles/"
 
 alias cls="clear"
+
+alias suck="sudo rm config.h; sudo make install"
 
 alias cp="cp -i"
 alias mv='mv -i'
@@ -70,7 +73,18 @@ alias todo="nvim ~/.config/zsh/todo.zsh"
 alias ls="exa --icons --git"
 alias ll="exa -la --icons --git"
 
+# Youtube-dl: a command line program to download youtube video orf just audio
 alias yt="youtube-dl"
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
 
 # apt aliases
 (( $+commands[apt] )) && APT=apt || APT=apt-get
