@@ -45,8 +45,8 @@ alt + s
 alt + z
     zim
 
-alt + m
-    alacritty 'neomutt' -e neomutt
+super + m
+    alacritty -e cmus 
 
 alt + n
     ferdi
@@ -130,8 +130,11 @@ super + r : {Left,Down,Up,Right}
     bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || \
     bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
+alt + r : Left
+    ~/.local/bin/resize.sh left
+
 # Change window states
-super + {t,shift + t,s,f}
+super + {t,shift + t,shift + f,f}
   bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
     

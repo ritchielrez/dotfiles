@@ -9,6 +9,8 @@ bspc rule -a Xfce4-appfinder state=floating
 # Window gap and padding
 bspc config window_gap 10
 bspc config top_padding 40
+bspc config left_padding 10
+bspc config right_padding 10
 
 bspc config split_ratio 0.5
 bspc config borderless_monocle true
@@ -32,9 +34,9 @@ alttab &
 sxhkd &
 
 # Wallpaper
-# nitrogen --restore &
+nitrogen --restore &
 # wpg -s /home/ritux/Documents/repos/wallpapers/maller/pyramid.jpg
-feh --bg-fill ~/Pictures/nordmac.jpg
+# feh --bg-fill ~/Pictures/photo-1530890289114-8385d3901f84.jpg
 
 # Compositor
 picom &
