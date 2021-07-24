@@ -5,6 +5,10 @@ alias sc="cd ~/Pictures/Screenshots"
 
 alias cls="clear"
 
+alias cp="cp -i"
+
+alias grep="grep --color=auto"
+
 alias config='/usr/bin/git --git-dir=/mnt/c/Repos/dotfiles-new --work-tree=$HOME'
 
 alias e="exit"
