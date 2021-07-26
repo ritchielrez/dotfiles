@@ -119,3 +119,5 @@ highlight Normal     ctermbg=NONE guibg=NONE
 highlight LineNr     ctermbg=NONE guibg=NONE
 highlight SignColumn ctermbg=NONE guibg=NONE
 
+" Recompile succkles porgrams automatically
+autocmd BufWritePost patched.def.h,config.h,config.def.h !sudo rm config.h; sudo rm patches.h; sudo make install

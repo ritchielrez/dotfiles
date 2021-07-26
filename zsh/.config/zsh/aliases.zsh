@@ -6,7 +6,7 @@ alias dot="cd ~/dotfiles/"
 
 alias cls="clear"
 
-alias suck="sudo rm config.h; sudo make install"
+alias suck="sudo rm config.h; sudo rm patches.h; sudo make install"
 
 alias cp="cp -i"
 alias mv='mv -i'
