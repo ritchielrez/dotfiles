@@ -4,6 +4,7 @@ filetype indent on
 set autoread
 let mapleader = " "
 set clipboard=unnamedplus
+set termguicolors
 
 " UI
 syntax on
@@ -63,6 +64,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
+    Plug 'norcalli/nvim-colorizer.lua'
 call plug#end()
 
 " FZF
@@ -99,6 +101,8 @@ require'nvim-treesitter.configs'.setup {
     disable = { "c", "rust" },  -- list of language that will be disabled
   },
 }
+
+require 'colorizer'.setup()
 EOF
 
 " Omnisharp 
@@ -121,3 +125,4 @@ highlight SignColumn ctermbg=NONE guibg=NONE
 
 " Recompile succkles porgrams automatically
 autocmd BufWritePost patched.def.h,config.def.h !sudo rm config.h; sudo rm patches.h; sudo make install
+
