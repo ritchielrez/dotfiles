@@ -21,6 +21,7 @@ killall sxhkd
 killall pnmixer
 killall nm-applet
 killall picom
+# killall xcompmgr
 killall dunst
 # killall xfce4-panel
 # killall polybar
@@ -40,6 +41,7 @@ nitrogen --restore &
 
 # Compositor
 picom &
+# xcompmgr -c &
 
 # Authentication
 lxsession &
