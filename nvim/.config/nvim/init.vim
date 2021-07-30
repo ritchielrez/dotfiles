@@ -9,6 +9,7 @@ set termguicolors
 " UI
 syntax on
 set background=dark
+set wrap
 set ruler
 set backspace=eol,start,indent
 set ignorecase
@@ -27,7 +28,7 @@ set laststatus=2
 set scrolloff=10
 set signcolumn=yes
 
-"Files, backups and undo
+" Files, backups and undo
 set nobackup
 set nowb
 set noswapfile
@@ -36,6 +37,12 @@ nnoremap <Leader>h <C-w>h
 nnoremap <Leader>j <C-w>j
 nnoremap <Leader>k <C-w>k
 nnoremap <Leader>l <C-w>l
+
+
+" Source the file, install plugins quickly
+nnoremap <Leader>s :so ~/.config/nvim/init.vim<CR>
+cnoremap Pi PlugInstall
+cnoremap Pc PlugClean
 
 " Text/Indent
 set expandtab
