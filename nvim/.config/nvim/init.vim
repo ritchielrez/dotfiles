@@ -72,6 +72,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
     Plug 'norcalli/nvim-colorizer.lua'
+	Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " FZF
