@@ -69,7 +69,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
     Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'sheerun/vim-polyglot'
@@ -126,7 +126,7 @@ EOF
 inoremap <expr><C-j> coc#refresh()
 
 " Colorscheme
-colorscheme gruvbox
+colorscheme lunar
 highlight Normal     ctermbg=NONE guibg=NONE
 highlight LineNr     ctermbg=NONE guibg=NONE
 highlight SignColumn ctermbg=NONE guibg=NONE
