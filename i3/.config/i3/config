@@ -37,7 +37,7 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nitrogen --restore
 
 # Autostart picom compositor
-exec --no-startup-id picom 
+# exec --no-startup-id picom 
 
 # Autostart alttab for window switching
 exec --no-startup-id alttab
@@ -46,10 +46,10 @@ exec --no-startup-id alttab
 exec --no-startup-id mate-polkit
 
 # Start polybar at startup
-# exec --no-startup-id ~/.config/polybar/launch
+exec --no-startup-id ~/.config/polybar/launch
 
 # Start xfce4-panel at startup
-exec --no-startup-id ~/.config/xfce4/launch
+# exec --no-startup-id ~/.config/xfce4/launch
 
 # Enable natural scolling and tap to click
 exec --no-startup-id xinput set-prop 13 314 1
@@ -63,16 +63,16 @@ exec --no-startup-id pnmixer
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.local/bin/volchange.sh volup
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.local/bin/volchange.sh voldown
-bindsym XF86AudioMute exec --no-startup-id ~/.local/bin/volchange.sh volmute
-bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send " Toggle Mic on/off"
+#bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.local/bin/volchange.sh volup
+#bindsym XF86AudioLowerVolume exec --no-startup-id ~/.local/bin/volchange.sh voldown
+#bindsym XF86AudioMute exec --no-startup-id ~/.local/bin/volchange.sh volmute
+#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send " Toggle Mic on/off"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec tilix
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill
