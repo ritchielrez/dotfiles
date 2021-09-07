@@ -46,12 +46,20 @@ format-offset =
 
 [colors]
 ; Nord theme ============
-background = #282c34
-foreground = #abb2bf
-alert = #bd2c40
-volume-min = #a3be8c
-volume-med = #ebcb8b
-volume-max = #bf616a
+;background = #282c34
+;foreground = #abb2bf
+;alert = #bd2c40
+;volume-min = #a3be8c
+;volume-med = #ebcb8b
+;volume-max = #bf616a
+
+; Nord theme ============
+background = #282828
+foreground = #ebdbb2
+alert = #cc241d
+volume-min = #b8bb26
+volume-med = #fe8019
+volume-max = #fb4934
 ; =======================
 
 ; Gotham theme ==========
@@ -971,10 +979,10 @@ type = internal/cpu
 ; Seconds to sleep between updates
 ; Default: 1
 interval = 1
-format-foreground = #fefefe
-format-background = #8d62ad
+format-foreground = ${colors.foreground}
+format-background = #b16286
 format-prefix = " "
-format-prefix-foreground = #fefefe
+format-prefix-foreground = ${colors.foreground}
 
 label-font = 1
 
@@ -1009,9 +1017,9 @@ date-alt = " %a %b %d, %Y"
 time = %l:%M%p
 time-alt = %l:%M%p
 format-prefix = " "
-format-prefix-foreground = #fefefe
-format-foreground = #fefefe
-format-background = #668bd7
+format-prefix-foreground = ${colors.foreground}
+format-foreground = ${colors.foreground}
+format-background = #458570
 label = "%date% %time% "
 
 #################################################################
@@ -1209,9 +1217,9 @@ label = %percentage_used%%
 
 format = <label>
 format-prefix = "  "
-format-prefix-foreground = #fefefe
-format-foreground = #fefefe
-format-background = #668bd7
+format-prefix-foreground = ${colors.foreground}
+format-foreground = ${colors.foreground}
+format-background = #458588
 
 label-padding-left = 2
 label-padding-right = 2
@@ -1333,18 +1341,18 @@ expand-right = true
 format-spacing = 4
 
 label-open = "  "
-label-close = 
+label-close = "  "
 label-separator =  
 label-separator-foreground = ${colors.foreground-alt}
 label-active-font = 1
 
-format-foreground = #fefefe
-format-background = #8d62ad
+format-foreground = ${colors.foreground}
+format-background = #b16260
 
 
 menu-0-0 = " Restart"
 menu-0-0-exec = reboot
-menu-0-1 = " Shutdown "
+menu-0-1 = " Shutdown   "
 menu-0-1-exec = shutdown now
 
 ###############################################################################
