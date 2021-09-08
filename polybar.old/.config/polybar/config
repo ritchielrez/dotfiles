@@ -53,7 +53,7 @@ format-offset =
 ;volume-med = #ebcb8b
 ;volume-max = #bf616a
 
-; Nord theme ============
+; Gruvbox theme ============
 background = #282828
 foreground = #ebdbb2
 alert = #cc241d
