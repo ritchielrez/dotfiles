@@ -135,7 +135,7 @@ font-4 = "Noto Color Emoji:size=14;4"
 
 modules-left = i3
 modules-center = 
-modules-right = networkspeedup networkspeeddown memory2 cpu2 date powermenu
+modules-right = networkspeedup networkspeeddown date powermenu
 
 separator = 
 
