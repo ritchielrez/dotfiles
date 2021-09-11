@@ -11,6 +11,8 @@ export PATH="/mnt/c/Applications/exa-linux-x86_64-v0.10.1/bin:$PATH"
 export PATH="/mnt/c/Applications/node/bin:$PATH"
 export PATH="/mnt/c/Applications/nvim-linux64/bin:$PATH"
 export PATH="~/.emacs.d/bin:$PATH"
+export PATH="/root/.local/bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
 
 export STARSHIP_CACHE=~/.starship/cache
 
