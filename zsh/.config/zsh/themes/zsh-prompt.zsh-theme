@@ -18,7 +18,7 @@
 
 setopt PROMPT_SUBST
 PROMPT='%F{#B16286}'
-PROMPT+='%B%F{#9ece6a}%n %b%F{#ad8ee6}in %F{yellow}%~%F{#346E75}$GITSTATUS_PROMPT%F{#B16286} '
+PROMPT+='%B%F{#9ece6a}%n %b%F{#ad8ee6}in %F{white}%~%F{#346E75}$GITSTATUS_PROMPT%F{#B16286} '
 PROMPT+='%(?.%B%F{#449dab}$ .%B%F{#e06c75}$ % '
 
 # ❯ 
