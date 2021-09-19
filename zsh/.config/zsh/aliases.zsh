@@ -28,7 +28,7 @@ alias md="mkdir"
 alias spicetify="~/spicetify-cli/spicetify"
 
 alias gs="git status | lolcat"
-alias ga="git add ."
+alias ga="git add . | lolcat"
 function gc()
 {
   git commit -m "$1" | lolcat
