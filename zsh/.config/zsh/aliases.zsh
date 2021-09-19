@@ -34,15 +34,15 @@ alias gp="git push -u --force origin master"
 
 function gac()
 {
-    git add .
-    git commit -m "$1"
+    git add . | lolcat
+    git commit -m "$1" | lolcat
 }
 
 function gacp()
 {
-	git add .
-	git commit -m "$1"
-	git push -u --force origin master
+	git add . | lolcat
+	git commit -m "$1" | lolcat
+	git push -u --force origin master | lolcat
 }
 
 ### ARCHIVE EXTRACTION
