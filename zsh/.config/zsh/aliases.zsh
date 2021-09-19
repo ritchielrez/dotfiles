@@ -1,4 +1,4 @@
-alias zshconf="nvim ~/.config/zsh/"
+alias zshconf="lvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
 alias sc="cd ~/Pictures/Screenshots"
@@ -22,6 +22,8 @@ alias t="tmux"
 alias dots="cd ~/Documents/repos/dotfiles"
 
 alias md="mkdir"
+
+alias spicetify="~/spicetify-cli/spicetify"
 
 alias gs="git status"
 alias ga="git add ."
