@@ -27,10 +27,13 @@ alias md="mkdir"
 
 alias spicetify="~/spicetify-cli/spicetify"
 
-alias gs="git status"
+alias gs="git status | lolcat"
 alias ga="git add ."
-alias gc="git commit -m"
-alias gp="git push -u --force origin master"
+function gc()
+{
+  git commit -m "$1" | lolcat
+}
+alias gp="git push -u --force origin master | lolcat"
 
 function gac()
 {
