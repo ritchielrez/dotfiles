@@ -48,14 +48,14 @@ source ~/.config/zsh/plugins/gitstatus/gitstatus.prompt.zsh
 # eval "$(starship init zsh)"
 
 # Set powerlevel10k prompt
-# source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.config/zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 
-fpath+=$HOME/.zsh/pure
+# fpath+=$HOME/.zsh/pure
 
 source ~/.config/zsh/autostart.zsh
 
 # autoload -U promptinit; promptinit
 # prompt pure
 #
-source ~/.config/zsh/themes/zsh-prompt.zsh-theme
+# source ~/.config/zsh/themes/zsh-prompt.zsh-theme
