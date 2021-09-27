@@ -111,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Hack Nerd Font
+    family: CaskaydiaCove Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -122,7 +122,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font
+    family: CaskaydiaCove Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -133,7 +133,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: Hack Nerd Font
+    family: CaskaydiaCove Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -150,7 +150,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -878,9 +878,9 @@ cursor:
 #
 # TokyoNight theme
 #schemes:
-#  # Tokyo Night theme, based on both:
-#  #   https://github.com/ghifarit53/tokyonight-vim
-#  #   https://github.com/enkia/tokyo-night-vscode-theme
+##  # Tokyo Night theme, based on both:
+##  #   https://github.com/ghifarit53/tokyonight-vim
+##  #   https://github.com/enkia/tokyo-night-vscode-theme
 #  tokyo-night: &tokyo-night
 #    # Default colors
 #    primary:
@@ -897,8 +897,7 @@ cursor:
 #      magenta: '0xad8ee6'
 #      cyan:    '0x449dab'
 #      white:   '0x787c99'
-
-#  # Bright colors
+##  # Bright colors
 #    bright:
 #      black:   '0x444b6a'
 #      red:     '0xff7a93'
@@ -908,14 +907,13 @@ cursor:
 #      magenta: '0xbb9af7'
 #      cyan:    '0x0db9d7'
 #      white:   '0xacb0d0'
-
+#
 #  tokyo-night-storm: &tokyo-night-storm
-    # Default colors
+#    # Default colors
 #    primary:
 #      background: '0x24283b'
 #      foreground: '0xa9b1d6'
-
-    # Normal colors
+#    # Normal colors
 #    normal:
 #      black:   '0x32344a'
 #      red:     '0xf7768e'
@@ -925,8 +923,7 @@ cursor:
 #      magenta: '0xad8ee6'
 #      cyan:    '0x449dab'
 #      white:   '0x9699a8'
-
-    # Bright colors
+#    # Bright colors
 #    bright:
 #      black:   '0x444b6a'
 #      red:     '0xff7a93'
@@ -936,11 +933,9 @@ cursor:
 #      magenta: '0xbb9af7'
 #      cyan:    '0x0db9d7'
 #      white:   '0xacb0d0'
-
 #colors: *tokyo-night
 
 # Nord theme
-
 colors:
   primary:
     background: '#2e3440'
@@ -960,8 +955,8 @@ colors:
       foreground: CellBackground
       background: '#88c0d0'
     bar:
-      background: '#434c5e'
-      foreground: '#d8dee9'
+     background: '#434c5e'
+     foreground: '#d8dee9'
   normal:
     black: '#3b4252'
     red: '#bf616a'
@@ -989,8 +984,6 @@ colors:
     magenta: '#8c738c'
     cyan: '#6d96a5'
     white: '#aeb3bb'
-
-
 
 
 
