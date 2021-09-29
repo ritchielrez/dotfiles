@@ -1,6 +1,8 @@
 alias zshconf="lvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
+alias cd="pushd"
+
 alias sc="pushd ~/Pictures/Screenshots"
 alias dot="pushd ~/repos/dotfiles/"
 alias dwd="pushd ~/.config/suckless/dwm"
