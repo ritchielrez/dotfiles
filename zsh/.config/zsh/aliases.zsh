@@ -4,7 +4,7 @@ alias so="source ~/.zshrc"
 alias sc="cd ~/Pictures/Screenshots"
 alias dot="cd ~/dotfiles/"
 
-alias neofetch="neofetch --ascii_distro darwin"
+# alias neofetch="neofetch --ascii_distro darwin"
 
 alias cls="clear"
 
