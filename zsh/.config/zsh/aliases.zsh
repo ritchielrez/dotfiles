@@ -1,8 +1,9 @@
 alias zshconf="lvim ~/.config/zsh/"
 alias so="source ~/.zshrc"
 
-alias sc="cd ~/Pictures/Screenshots"
-alias dot="cd ~/dotfiles/"
+alias sc="pushd ~/Pictures/Screenshots"
+alias dot="pushd ~/repos/dotfiles/"
+alias dwd="pushd ~/.config/suckless/dwm"
 
 # alias neofetch="neofetch --ascii_distro darwin"
 
