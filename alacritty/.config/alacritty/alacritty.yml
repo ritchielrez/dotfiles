@@ -986,5 +986,5 @@ cursor:
 #    white: '#aeb3bb'
 
 import:
-  - ~/.config/alacritty/dracula.yml
+  - ~/.cache/wal/colors.yml
 
