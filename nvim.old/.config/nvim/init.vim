@@ -7,7 +7,6 @@ set clipboard=unnamedplus
 set termguicolors
 
 " UI
-syntax on
 set background=dark
 set wrap
 set ruler
@@ -63,9 +62,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'morhetz/gruvbox'
     Plug 'tpope/vim-fugitive'
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     Plug 'preservim/nerdtree'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
     Plug 'neovim/nvim-lspconfig'
     Plug 'nvim-lua/completion-nvim'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -73,6 +72,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
     Plug 'norcalli/nvim-colorizer.lua'
 	Plug 'sheerun/vim-polyglot'
+    Plug 'dylanaraps/wal.vim'
 call plug#end()
 
 " FZF
@@ -80,7 +80,7 @@ nmap <Leader><Tab> <Plug>(fzf-maps-n)
 nmap <Leader>p :Files<CR>
 
 " NerdTree
-nnoremap <Leader>t :NERDTreeToggle<CR>
+nnoremap <Leader>e :NERDTreeToggle<CR>
 let g:NERDTreeQuitOnOpen = 1
 
 " LSP
@@ -100,18 +100,7 @@ lua << EOF
 
 EOF
 
-lua <<EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "maintained", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  ignore_install = { "javascript" }, -- List of parsers to ignore installing
-  highlight = {
-    enable = true,              -- false will disable the whole extension
-    disable = { "c", "rust" },  -- list of language that will be disabled
-  },
-}
-
-require 'colorizer'.setup()
-EOF
+luafile ~/.config/nvim/lua/init.lua
 
 " Omnisharp 
 " let g:OmniSharp_server_path = '/mnt/c/Applications/run'
@@ -126,7 +115,7 @@ EOF
 inoremap <expr><C-j> coc#refresh()
 
 " Colorscheme
-colorscheme lunar
+colorscheme dracula
 highlight Normal     ctermbg=NONE guibg=NONE
 highlight LineNr     ctermbg=NONE guibg=NONE
 highlight SignColumn ctermbg=NONE guibg=NONE
