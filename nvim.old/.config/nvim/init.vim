@@ -115,7 +115,7 @@ luafile ~/.config/nvim/lua/init.lua
 inoremap <expr><C-j> coc#refresh()
 
 " Colorscheme
-colorscheme dracula
+colorscheme onedark
 highlight Normal     ctermbg=NONE guibg=NONE
 highlight LineNr     ctermbg=NONE guibg=NONE
 highlight SignColumn ctermbg=NONE guibg=NONE
