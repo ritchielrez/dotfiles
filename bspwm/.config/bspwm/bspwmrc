@@ -46,7 +46,7 @@ sxhkd &
 # nitrogen --restore &
 # wpg -s /home/ritux/Documents/repos/wallpapers/maller/pyramid.jpg
 # feh --bg-fill ~/Pictures/photo-1530890289114-8385d3901f84.jpg
-feh --bg-fill ~/Pictures/wallpapers/wallpapers/maller/thirst.jpg
+feh --bg-fill ~/Pictures/wallpapers/wallpapers/maller/astronomy.jpg
 # Compositor
 picom &
 # xcompmgr -c &
