@@ -60,14 +60,22 @@ map <C-k> :cp<CR>
 call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
+    
     Plug 'morhetz/gruvbox'
+    
     Plug 'tpope/vim-fugitive'
+
     Plug 'preservim/nerdtree'
     Plug 'ryanoasis/vim-devicons'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    
     Plug 'neovim/nvim-lspconfig'
-    Plug 'nvim-lua/completion-nvim'
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'hrsh7th/nvim-cmp'
+    Plug 'hrsh7th/cmp-nvim-lsp'
+    Plug 'hrsh7th/cmp-path'
+    Plug 'hrsh7th/cmp-buffer'
+    Plug 'simrat39/rust-tools.nvim'
+    
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
     Plug 'norcalli/nvim-colorizer.lua'
@@ -83,24 +91,8 @@ nmap <Leader>p :Files<CR>
 nnoremap <Leader>e :NERDTreeToggle<CR>
 let g:NERDTreeQuitOnOpen = 1
 
-" LSP
-lua << EOF
- -- local nvim_lsp = require('lspconfig')
-
- -- local on_attach = function(client, bufferNumber)
-    -- require('completion').on_attach(client)
- -- end
-
- -- local pid = vim.fn.getpid()
- -- local omnisharp_bin = "/mnt/c/Applications/run"
- -- nvim_lsp.omnisharp.setup({ on_attach = on_attach })
- --nvim_lsp.rust_analyzer.setup({ on_attach = on_attach })
- --nvim_lsp.clangd.setup({ on_attach = on_attach })
- --nvim_lsp.tsserver.setup({ on_attach = on_attach })
-
-EOF
-
 luafile ~/.config/nvim/lua/init.lua
+luafile ~/.config/nvim/lua/lsp.lua
 
 " Omnisharp 
 " let g:OmniSharp_server_path = '/mnt/c/Applications/run'
@@ -111,8 +103,18 @@ luafile ~/.config/nvim/lua/init.lua
 " nnoremap <leader><space> <cmd>lua vim.lsp.buf.code_action()<CR>
 " vnoremap <leader><space> :lua vim.lsp.buf.range_code_action()<CR>
 " nnoremap <F2> <cmd>lua vim.lsp.buf.rename()<CR>
+"
 
-inoremap <expr><C-j> coc#refresh()
+" Nvim-cmp
+
+" Set completeopt to have a better completion experience
+" :help completeopt
+" menuone: popup even when there's only one match
+" noinsert: Do not insert text until a selection is made
+" noselect: Do not select, force user to select one from the menu
+set completeopt=menuone,noinsert,noselect
+" Avoid showing extra messages when using completion
+set shortmess+=c
 
 " Colorscheme
 colorscheme onedark

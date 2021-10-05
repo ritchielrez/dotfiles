@@ -14,13 +14,13 @@ super + shift + Return
 #Rofi & dmenu
 
 super + d
-    rofi -font "JetBrainsMono NF 12" -show-icons -show drun -dpi 1.25
+    rofi -font "CaskaydiaCove Nerd Font 12" -show-icons -show drun -dpi 1.25
 
 super + c
   clipmenu
 
 super + e 
-    rofi -font "JetBrainsMono NF 12" -show emoji -modi emoji -dpi 1.25
+    rofi -font "CaskaydiaCove Nerd Font 12" -show emoji -modi emoji -dpi 1.25
 
 alt + p
     rofi -show

@@ -11,7 +11,7 @@ alias dwd="pushd ~/.config/suckless/dwm"
 
 alias cls="clear"
 
-alias suck="doas rm config.h; sudo rm patches.h; sudo make install"
+alias suck="sudo rm config.h; sudo rm patches.h; sudo make install"
 
 alias cp="cp -i"
 alias mv='mv -i'
@@ -116,21 +116,21 @@ alias aglu='apt list --upgradable'
 
 # superuser operations ######################################################
 
-alias afu='doas apt-file update'
+alias afu='sudo apt-file update'
 
-alias ppap='doas ppa-purge'
+alias ppap='sudo ppa-purge'
 
-alias age="doas $APT"
-alias aga="doas $APT autoclean"
-alias agb="doas $APT build-dep"
-alias agc="doas $APT clean"
-alias agd="doas $APT dselect-upgrade"
-alias agi="doas $APT install"
-alias agp="doas $APT purge"
-alias agr="doas $APT remove"
-alias agu="doas $APT update"
-alias agud="doas $APT update && sudo $APT dist-upgrade"
-alias agug="doas $APT upgrade"
-alias aguu="doas $APT update && sudo $APT upgrade"
-alias agar="doas $APT autoremove"
+alias age="sudo $APT"
+alias aga="sudo $APT autoclean"
+alias agb="sudo $APT build-dep"
+alias agc="sudo $APT clean"
+alias agd="sudo $APT dselect-upgrade"
+alias agi="sudo $APT install"
+alias agp="sudo $APT purge"
+alias agr="sudo $APT remove"
+alias agu="sudo $APT update"
+alias agud="sudo $APT update && sudo $APT dist-upgrade"
+alias agug="sudo $APT upgrade"
+alias aguu="sudo $APT update && sudo $APT upgrade"
+alias agar="sudo $APT autoremove"
 

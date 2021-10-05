@@ -4,7 +4,7 @@ cd ~
 # wpg -s /home/ritux/Documents/repos/wallpapers/maller/awake.jpg ; clear
 
 # Set wgtk color scheme in zsh
-(cat ~/.cache/wal/sequences &)
+# (cat ~/.cache/wal/sequences &)
 
 # Autostart tmux
 
