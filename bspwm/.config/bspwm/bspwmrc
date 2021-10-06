@@ -53,7 +53,7 @@ lxsession &
 dunst &
 
 # Network Manger applet
-connman-gtk &
+# connman-gtk &
 
 # Sound applet
 pnmixer &
