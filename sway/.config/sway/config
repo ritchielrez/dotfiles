@@ -60,7 +60,12 @@ font pango:CaskaydiaCove Nerd Font 12
 #       natural_scroll enabled
 #       middle_emulation enabled
 #   }
-#
+
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
+
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
