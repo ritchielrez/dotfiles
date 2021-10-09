@@ -128,14 +128,14 @@ module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
 font-0 = "Ubuntu:size=16;4"
-font-1 = "Ubuntu Nerd Font:size=14;5"
+font-1 = "Ubuntu Nerd Font:size=15;4"
 font-2 = "Font Awesome 5 Free:style=Regular:size=14;2"
 font-3 = "Font Awesome 5 Free:style=Solid:size=14;2"
 font-4 = "Noto Color Emoji:size=14;4"
 
 modules-left = i3
 modules-center = 
-modules-right = networkspeedup networkspeeddown date powermenu
+modules-right = date 
 
 separator = 
 
@@ -1338,10 +1338,10 @@ format-background = #668bd7
 [module/powermenu]
 type = custom/menu
 expand-right = true
-format-spacing = 4
+format-spacing = 2
 
 label-open = "  "
-label-close = "  "
+label-close = " "
 label-separator =  
 label-separator-foreground = ${colors.foreground-alt}
 label-active-font = 1
@@ -1352,7 +1352,7 @@ format-background = #b16260
 
 menu-0-0 = " Restart"
 menu-0-0-exec = reboot
-menu-0-1 = " Shutdown   "
+menu-0-1 = " Shutdown  "
 menu-0-1-exec = shutdown now
 
 ###############################################################################

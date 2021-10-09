@@ -61,6 +61,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
     
+    Plug 'terryma/vim-multiple-cursors'
+
     Plug 'morhetz/gruvbox'
     
     Plug 'tpope/vim-fugitive'
@@ -124,4 +126,16 @@ highlight SignColumn ctermbg=NONE guibg=NONE
 
 " Recompile succkles porgrams automatically
 autocmd BufWritePost patched.def.h,config.def.h !sudo rm config.h; sudo rm patches.h; sudo make install
+
+" Lsp keybindings
+" Code navigation shortcuts
+nnoremap <silent> <c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent> K     <cmd>lua vim.lsp.buf.hover()<CR>
+nnoremap <silent> gD    <cmd>lua vim.lsp.buf.implementation()<CR>
+nnoremap <silent> <c-k> <cmd>lua vim.lsp.buf.signature_help()<CR>
+nnoremap <silent> 1gD   <cmd>lua vim.lsp.buf.type_definition()<CR>
+nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
+nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
+nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
+nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
 
