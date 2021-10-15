@@ -1,11 +1,14 @@
 local nvim_lsp = require'lspconfig'
 
+------- Python
 nvim_lsp.pyright.setup{}
 
+------- Lua
 local runtime_path = vim.split(package.path, ';')
 table.insert(runtime_path, "lua/?.lua")
 table.insert(runtime_path, "lua/?/init.lua")
 
+--- Start the lua lsp
 nvim_lsp.sumneko_lua.setup {
   cmd = {"/home/ritux/repos/lua-language-server/bin/Linux/lua-language-server", "-E", "/home/ritux/repos/lua-language-server/bin/Linux/" .. "/main.lua"};
   settings = {
@@ -32,8 +35,10 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
+------- Start vimls
 nvim_lsp.vimls.setup{}
 
+------- Now rust-analyzer
 local opts = {
     tools = { -- rust-tools options
         autoSetHints = true,
@@ -64,19 +69,23 @@ local opts = {
     },
 }
 
+------- Also rust-tooles for extra rust features
 require('rust-tools').setup(opts)
 
+------- cmp.nvim for autocompletetion
 local cmp = require'cmp'
 cmp.setup({
+
   -- Enable LSP snippets
   snippet = {
     expand = function(args)
         vim.fn["vsnip#anonymous"](args.body)
     end,
   },
+  -- LSP keymaps
   mapping = {
-    ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-n>'] = cmp.mapping.select_next_item(),
+    ['<C-k>'] = cmp.mapping.select_prev_item(),
+    ['<C-j>'] = cmp.mapping.select_next_item(),
     -- Add tab support
     ['<S-Tab>'] = cmp.mapping.select_prev_item(),
     ['<Tab>'] = cmp.mapping.select_next_item(),
