@@ -205,8 +205,8 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar + bumblebee-status
 bar {
-	status_command /home/ritux/.local/bin/bumblebee-status -m battery date time title \
-		pasink pasource weather -p time.format="%H:%M" weather.location=dhaka title.max=24 -t gruvbox-powerline
+	status_command /home/ritux/.local/bin/bumblebee-status -m title battery date time \
+		pasink pasource weather -p time.format="%H:%M" weather.location=dhaka title.max=36 title.theme.align=center,center -t gruvbox-powerline
 
         colors {
                 background #282828
