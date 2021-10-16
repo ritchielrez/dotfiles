@@ -26,6 +26,11 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# Dunst is the most popular notification daemon for i3 windows manager,
+# it shows yours notifications wherever you want, however you want.
+exec --no-startup-id killall dunst
+exec --no-startup-id dunst &
+
 # Start power manager for power and screen brightness managment
 exec --no-startup-id xfce4-power-manager
 
@@ -48,7 +53,7 @@ exec --no-startup-id ~/.config/polybar/launch.sh
 # exec --no-startup-id ~/.config/xfce4/launch
 
 # Start the emacs server daemon
-exec --no-startup-id emacs --daemon
+# exec --no-startup-id emacs --daemon
 
 # Start sound control system tray
 exec --no-startup-id pnmixer
@@ -200,8 +205,8 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar + bumblebee-status
 bar {
-	status_command /home/ritux/.local/bin/bumblebee-status -m battery date time \
-		pasink pasource speedtest -p time.format="%H:%M" -t gruvbox-powerline
+	status_command /home/ritux/.local/bin/bumblebee-status -m battery date time title \
+		pasink pasource weather -p time.format="%H:%M" weather.location=dhaka title.max=24 -t gruvbox-powerline
 
         colors {
                 background #282828
