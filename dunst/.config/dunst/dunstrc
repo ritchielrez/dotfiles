@@ -1,7 +1,7 @@
 [global]
     # Screenshot: https://i.imgur.com/zlzLMgP.png
     # font = Monospace 10
-    font = Ubuntu Mono 11
+    font = CaskaydiaCove Nerd Font 11
  
     # allow a small subset of html markup:
     # <b>bold</b>
@@ -127,7 +127,7 @@
  
 [frame]
     width = 0
-    color = "#000000"
+    color = "#282828"
  
 [shortcuts]
     # shortcuts are specified as [modifier+][modifier+]...key
@@ -150,18 +150,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the '#' and following  would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#1D2021"
+    foreground = "#D5C4A1"
     timeout = 10
  
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
+    background = "#458588"
+    foreground = "#EBDBB2"
     timeout = 10
  
 [urgency_critical]
     background = "#900000"
-    foreground = "#ffffff"
+    foreground = "#EBDBB2"
     timeout = 0
  
  
