@@ -69,7 +69,7 @@ local opts = {
     },
 }
 
-------- Also rust-tooles for extra rust features
+------- Also rust-tools for extra rust features
 require('rust-tools').setup(opts)
 
 ------- cmp.nvim for autocompletetion
