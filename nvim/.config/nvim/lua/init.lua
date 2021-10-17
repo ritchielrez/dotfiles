@@ -8,5 +8,4 @@ require'nvim-treesitter.configs'.setup {
 
 require 'colorizer'.setup()
 
-vim.ui.select = require"popui.ui-overrider"
 

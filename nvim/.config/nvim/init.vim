@@ -64,6 +64,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'terryma/vim-multiple-cursors'
 
     Plug 'morhetz/gruvbox'
+    Plug 'sainnhe/gruvbox-material'
     
     Plug 'tpope/vim-fugitive'
 
@@ -77,6 +78,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'hrsh7th/cmp-path'
     Plug 'hrsh7th/cmp-buffer'
     Plug 'simrat39/rust-tools.nvim'
+    Plug 'hrsh7th/vim-vsnip'
     
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
@@ -119,7 +121,7 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
 " Colorscheme
-colorscheme gruvbox
+colorscheme gruvbox-material
 highlight Normal     ctermbg=NONE guibg=NONE
 highlight LineNr     ctermbg=NONE guibg=NONE
 highlight SignColumn ctermbg=NONE guibg=NONE
@@ -138,4 +140,3 @@ nnoremap <silent> gr    <cmd>lua vim.lsp.buf.references()<CR>
 nnoremap <silent> g0    <cmd>lua vim.lsp.buf.document_symbol()<CR>
 nnoremap <silent> gW    <cmd>lua vim.lsp.buf.workspace_symbol()<CR>
 nnoremap <silent> gd    <cmd>lua vim.lsp.buf.definition()<CR>
-
