@@ -8,7 +8,7 @@ bspc rule -a Xfce4-appfinder state=floating
 
 # Window gap and padding
 bspc config window_gap 10
-bspc config top_padding 50
+bspc config top_padding 30
 bspc config left_padding 10
 bspc config right_padding 10
 
@@ -17,7 +17,7 @@ bspc config borderless_monocle false
 bspc config single_monocle false
 bspc config gapless_monocle false
 
-# Kill running processes
+# Kill all the autostart programs first
 killall sxhkd
 killall pnmixer
 killall connman-gtk
@@ -27,12 +27,8 @@ killall picom
 killall dunst
 # killall xfce4-panel
 # killall polybar
-killall alttab
 killall ibus-daemon
 killall emacs
-
-# Window switcher
-alttab &
 
 # Key binding daemon
 sxhkd &
@@ -43,7 +39,7 @@ nitrogen --restore &
 # feh --bg-fill ~/Pictures/photo-1530890289114-8385d3901f84.jpg
 #feh --bg-fill ~/Pictures/wallpapers/wallpapers/maller/astronomy.jpg
 # Compositor
-picom --experimental-backends & 
+# picom --experimental-backends & 
 # xcompmgr -c &
 
 # Authentication
