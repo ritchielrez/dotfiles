@@ -1,7 +1,7 @@
 [global]
     # Screenshot: https://i.imgur.com/zlzLMgP.png
     # font = Monospace 10
-    font = CaskaydiaCove Nerd Font 11
+    font = Iosevka Medium 12
  
     # allow a small subset of html markup:
     # <b>bold</b>
