@@ -45,9 +45,6 @@ alt + s
 alt + z
     zim
 
-super + m
-    alacritty -e cmus 
-
 alt + n
     ferdi
 
@@ -132,9 +129,14 @@ super + {t,shift + t,shift + f,f}
   bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # Expand/contract a window by moving one of its side outward/inward
-super + r : {h,j,k,l}
+super + r : {Left,Down,Up,Right}
     STEP=100; SELECTION={1,2,3,4}; bspc node -z $(echo "left -$STEP 0,bottom 0 $STEP,top 0 -$STEP,right $STEP 0" | cut -d',' -f$SELECTION) || bspc node -z $(echo "right -$STEP 0,top 0 $STEP,bottom 0 -$STEP,left $STEP 0" | cut -d',' -f$SELECTION)
 
+super + p : {h,j,k,l}
+    bspwm_resize expand {west,south,north,east} 50
+
+super + shift + p : {h,j,k,l}
+    bspwm_resize contract {west,south,north,east} 50
 
     
 
