@@ -7,8 +7,8 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 bspc rule -a Xfce4-appfinder state=floating
 
 # Window gap and padding
-bspc config bottom_padding 	  40
-bspc config top_padding 	  10
+bspc config bottom_padding 	  10
+bspc config top_padding 	  40
 bspc config right_padding 	  20
 bspc config left_padding 	  20
 
@@ -29,7 +29,7 @@ killall picom
 # killall xcompmgr
 killall dunst
 # killall xfce4-panel
-# killall polybar
+killall polybar
 killall ibus-daemon
 killall emacs
 
@@ -65,7 +65,7 @@ xfce4-power-manager &
 # ~/.config/xfce4/launch &
 
 # Polybar
-~/polybar-collection/themes/minimal/launch.sh
+polybar example &
 
 # Emacs daemon server 
 emacs --daemon &
