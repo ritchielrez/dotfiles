@@ -78,3 +78,6 @@ emacs --daemon &
 
 # Start ibus
 ibus-daemon &
+
+# High dpi
+xrdb load ~/.Xresources &
