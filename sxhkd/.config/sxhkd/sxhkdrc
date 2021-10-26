@@ -9,7 +9,7 @@ super + Return
   alacritty
 
 super + shift + Return
-  nemo
+  Thunar
 
 #Rofi & dmenu
 
