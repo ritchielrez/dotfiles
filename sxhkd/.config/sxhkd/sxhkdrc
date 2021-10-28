@@ -15,6 +15,7 @@ super + shift + Return
 
 super + d
   rofi -dpi 1.25 -font "JetbrainsMono Nerd Font 12" -show-icons -show drun
+  #Xfce4-appfinder
 
 super + c
   clipmenu
@@ -146,3 +147,4 @@ super + p : {h,j,k,l}
 
 super + shift + p : {h,j,k,l}
   bspwm_resize contract {west,south,north,east} 50
+
