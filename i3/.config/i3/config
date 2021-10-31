@@ -61,9 +61,11 @@ exec --no-startup-id pnmixer
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 #bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.local/bin/volchange.sh volup
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume -5%
 #bindsym XF86AudioLowerVolume exec --no-startup-id ~/.local/bin/volchange.sh voldown
 #bindsym XF86AudioMute exec --no-startup-id ~/.local/bin/volchange.sh volmute
-#bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && notify-send " Toggle Mic on/off"
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -219,14 +221,14 @@ bindsym $mod+r mode "resize"
 #}
 
 # Remove i3wm default titlebar
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
 # defining inner and outer window gaps
 gaps inner 10
 gaps outer 15
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #83a598 #83a598 #ebdbb2 #83a598   #83a598
+client.focused          #689d6a #689d6a #ebdbb2 #689d6a   #689d6a
 client.focused_inactive #d5c4a1 #d5c4a1 #282828 #d5c4a1   #d5c4a1
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
