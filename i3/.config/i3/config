@@ -204,19 +204,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar + bumblebee-status
-bar {
-	status_command /home/ritux/.local/bin/bumblebee-status -m title battery date time \
-		pasink pasource weather -p time.format="%H:%M" weather.location=dhaka title.max=36 title.theme.align=center,center -t gruvbox-powerline
+#bar {
+#	status_command /home/ritux/.local/bin/bumblebee-status -m title battery date time \
+#		pasink pasource weather -p time.format="%H:%M" weather.location=dhaka title.max=36 title.theme.align=center,center -t gruvbox-powerline
 
-        colors {
-                background #282828
-                statusline #1ABC9C
-                separator #1ABC9C
-                # colorclass       <border> <background> <text>
-                focused_workspace  #689D6A  #689D6A     #1F2D3A
-                inactive_workspace #282828  #282828     #689D6A
-	}
-}
+#        colors {
+#                background #282828
+#                statusline #1ABC9C
+#                separator #1ABC9C
+#                # colorclass       <border> <background> <text>
+#                focused_workspace  #689D6A  #689D6A     #1F2D3A
+#                inactive_workspace #282828  #282828     #689D6A
+#	}
+#}
 
 # Remove i3wm default titlebar
 for_window [class="^.*"] border pixel 0
