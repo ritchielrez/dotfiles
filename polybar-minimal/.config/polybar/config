@@ -30,7 +30,7 @@ alert = #cc241d
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 30
+height = 25
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -51,7 +51,7 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = JetbrainsMono Nerd Font:size=12;3
+font-0 = JetbrainsMono Nerd Font:size=11;2
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
@@ -61,10 +61,11 @@ modules-right = audio wlan eth battery date
 
 tray-position = right
 tray-padding = 0
+tray-maxsize = 36
 ;tray-background = #0063ff
 
-wm-restack = bspwm
-;wm-restack = i3
+;wm-restack = bspwm
+wm-restack = i3
 
 ;override-redirect = true
 
@@ -144,7 +145,7 @@ label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
 label-focused = %index%
-label-focused-background = ${colors.background-alt}
+label-focused-background = ${colors.primary}
 label-focused-underline= ${colors.primary}
 label-focused-padding = 2
 
@@ -280,6 +281,7 @@ format-volume = <ramp-volume><label-volume>
 label-muted = " "
 ramp-volume-0 = " "
 ramp-volume-1 = " "
+label-muted-foreground = ${colors.foreground-alt}
 ramp-volume-foreground = ${colors.foreground-alt}
 click-right = "pactl set-sink-volume @DEFAULT_SINK@ -1000"
 click-middle = "pavucontrol"
