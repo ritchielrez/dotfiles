@@ -73,13 +73,45 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
-  gruvbox = {
+  ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/gruvbox"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+  },
+  ["cmp-cmdline"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-cmdline"
+  },
+  ["cmp-nvim-lsp"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+  },
+  ["cmp-path"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-path"
+  },
+  ["cmp-vsnip"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-vsnip"
   },
   ["gruvbox-material"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/gruvbox-material"
+  },
+  neorg = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/neorg"
+  },
+  ["nvcode-color-schemes.vim"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
+  },
+  ["nvim-base16"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-base16"
+  },
+  ["nvim-cmp"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-cmp"
   },
   ["nvim-colorizer.lua"] = {
     config = { "\27LJ\1\2F\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\3\0\0\6*\t!vim\nsetup\14colorizer\frequire\0" },
@@ -106,9 +138,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
-  ["vim-polyglot"] = {
+  ["vim-vsnip"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vim-polyglot"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vim-vsnip"
   }
 }
 

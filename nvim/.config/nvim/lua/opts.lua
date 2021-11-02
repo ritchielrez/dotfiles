@@ -16,6 +16,9 @@ vim.bo.shiftwidth = 4
 vim.o.softtabstop = 4
 vim.bo.softtabstop = 4
 
+vim.o.swapfile = false
+vim.bo.swapfile = false
+
 -- Leader key is used to make unique keymaps
 vim.g.mapleader = " "
 vim.b.mapleader = " "
@@ -28,5 +31,9 @@ vim.g.termguicolors = true
 require'nvim-treesitter.configs'.setup {
   indent = {
     enable = true
-  }
+  },
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+    disable = { "c", "rust" },  -- list of language that will be disabled
+  },
 }

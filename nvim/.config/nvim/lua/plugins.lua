@@ -4,10 +4,12 @@ require('packer').startup(function()
 
     -- My favourite themes
     use 'sainnhe/gruvbox-material'
-    use 'gruvbox-community/gruvbox'
+    -- use 'gruvbox-community/gruvbox'
+    use 'RRethy/nvim-base16'
+    use 'ChristianChiarulli/nvcode-color-schemes.vim'
 
     -- Syntax highlighting
-    use 'sheerun/vim-polyglot'
+    -- use 'sheerun/vim-polyglot'
 
     -- Tresitter, a next gen syntax parser, mainly used to theme properly
     use 'nvim-treesitter/nvim-treesitter'
@@ -21,8 +23,18 @@ require('packer').startup(function()
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- Langauge autocompletion, error linting
     use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/cmp-buffer'
+    use 'hrsh7th/cmp-path'
+    use 'hrsh7th/cmp-cmdline'
 
+    use 'hrsh7th/cmp-vsnip'
+    use 'hrsh7th/vim-vsnip'
+
+    -- Show me color codes live
     use {
         'norcalli/nvim-colorizer.lua',
         config = function() require 'colorizer'.setup {
@@ -33,4 +45,17 @@ require('packer').startup(function()
     end
     }
 
+    -- Note taking
+    use { 
+        "nvim-neorg/neorg",
+        requires = "nvim-lua/plenary.nvim"
+    }
+
 end)
+
+-- Neorg( note taking plugin ) config
+require("plugins.neorg")
+
+-- Cmp( completetion plugin ) config
+require("plugins.cmp")
+
