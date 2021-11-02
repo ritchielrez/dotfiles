@@ -59,3 +59,5 @@ require("plugins.neorg")
 -- Cmp( completetion plugin ) config
 require("plugins.cmp")
 
+-- Tresitter config
+require("plugins.treesitter")
