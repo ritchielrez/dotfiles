@@ -48,8 +48,7 @@ require('packer').startup(function()
     -- Note taking
     use { 
         "nvim-neorg/neorg",
-        requires = "nvim-lua/plenary.nvim",
-        requires = "nvim-neorg/neorg-telescope"
+        requires = "nvim-lua/plenary.nvim"
     }
 
 end)

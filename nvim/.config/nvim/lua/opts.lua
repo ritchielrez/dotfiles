@@ -27,4 +27,6 @@ vim.b.mapleader = " "
 vim.o.termguicolors = true
 vim.g.termguicolors = true
 
-
+-- Signcolumn is a column where we could see the erros signs
+vim.o.signcolumn = "yes"
+vim.wo.signcolumn = "yes"
