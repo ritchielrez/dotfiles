@@ -48,10 +48,14 @@ require('packer').startup(function()
     -- Note taking
     use { 
         "nvim-neorg/neorg",
-        requires = "nvim-lua/plenary.nvim"
+        requires = "nvim-lua/plenary.nvim",
+        requires = "nvim-neorg/neorg-telescope"
     }
 
 end)
+
+-- Lsp config
+require("plugins.lsp")
 
 -- Neorg( note taking plugin ) config
 require("plugins.neorg")

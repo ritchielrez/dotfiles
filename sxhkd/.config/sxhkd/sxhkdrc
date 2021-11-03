@@ -5,6 +5,10 @@ super + Escape
 super + ctrl + r
   pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
 
+# Force kill an application
+super + alt + x
+  xkill
+
 super + Return
   alacritty
 
@@ -104,15 +108,6 @@ XF86AudioStop
 
 alt + {h,j,k,l}
   mpc {prev,next,play,pause}
-
-# Brightness Keybindings
-# brightness down
-XF86MonBrightnessDown
-  doas xbacklight -dec 5
-
-# brightness up
-XF86MonBrightnessUp
-  doas xbacklight -inc 5
 
 # quit/restart bspwm
 super + shift + {q,r}

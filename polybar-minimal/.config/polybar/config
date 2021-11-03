@@ -61,7 +61,7 @@ modules-right = audio wlan eth battery date
 
 tray-position = right
 tray-padding = 0
-tray-maxsize = 36
+tray-maxsize = 20
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm

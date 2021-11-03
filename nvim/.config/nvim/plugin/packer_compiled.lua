@@ -101,6 +101,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/neorg"
   },
+  ["neorg-telescope"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/neorg-telescope"
+  },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
@@ -141,6 +145,10 @@ _G.packer_plugins = {
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vimwiki"
   }
 }
 
