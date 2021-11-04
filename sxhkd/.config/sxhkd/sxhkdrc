@@ -62,6 +62,9 @@ ctrl + alt + s
 alt + l
   lotion
 
+alt + t
+  alacritty -e nvim /home/ritux/neorg/todo.norg
+
 alt + 4
   ~/.local/bin/powermenu
 
