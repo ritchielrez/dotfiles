@@ -7,6 +7,7 @@
 ![](./Desktop_Screenshot.png)
 
 
+## ⚠️!! This is testing branch, expect broken and unstable configs all over the place
 
 ## What is dotfiles?
 
