@@ -18,14 +18,14 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #282828
+background = #32302F
 background-alt = #3c3836
 ;foreground = ${xrdb:color7:#222}
-foreground = #ebdbb2
+foreground = #dfbf8e
 foreground-alt = #928374
 primary = #689d6a
-secondary = #8ec07c
-alert = #cc241d
+secondary = #89b482
+alert = #ea6962
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -56,8 +56,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm i3
-modules-center = mpd
-modules-right = audio wlan eth battery date 
+modules-center = date
+modules-right = audio wlan eth battery
 
 tray-position = right
 tray-padding = 0
@@ -265,7 +265,7 @@ date =
 date-alt = " %Y-%m-%d "
 
 time = "%r "
-time-alt = "%H:%M:%S "
+time-alt = "%r "
 
 format-prefix = ""
 format-prefix-foreground = ${colors.foreground-alt}
@@ -349,10 +349,10 @@ battery = BAT0
 adapter = ADP1
 full-at = 98
 
-format-charging = <animation-charging> <label-charging>
+format-charging = "<animation-charging> <label-charging>"
 format-charging-underline = #ffb52a
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = "<animation-discharging> <label-discharging> "
 format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
