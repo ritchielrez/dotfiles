@@ -61,13 +61,13 @@ modules-right = audio wlan eth battery
 
 tray-position = right
 tray-padding = 0
-tray-maxsize = 20
+tray-maxsize = 36
 ;tray-background = #0063ff
 
-;wm-restack = bspwm
-wm-restack = i3
+wm-restack = bspwm
+;wm-restack = i3
 
-;override-redirect = true
+override-redirect = true
 
 ;scroll-up = bspwm-desknext
 ;scroll-down = bspwm-deskprev
@@ -349,7 +349,7 @@ battery = BAT0
 adapter = ADP1
 full-at = 98
 
-format-charging = "<animation-charging> <label-charging>"
+format-charging = "<animation-charging> <label-charging> "
 format-charging-underline = #ffb52a
 
 format-discharging = "<animation-discharging> <label-discharging> "
