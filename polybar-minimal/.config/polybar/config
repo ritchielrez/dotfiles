@@ -51,9 +51,8 @@ padding-right = 0
 module-margin-left = 1
 module-margin-right = 1
 
-font-0 = JetbrainsMono Nerd Font:size=11;2
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
+font-0 = JetbrainsMono Nerd Font:size=12;2
+font-1 = JoyPixels:scale=8;2
 
 modules-left = bspwm i3
 modules-center = date
@@ -268,7 +267,7 @@ date-alt = " %Y-%m-%d "
 time = "%r "
 time-alt = "%r "
 
-format-prefix = ""
+format-prefix = "📅"
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #458588
 
