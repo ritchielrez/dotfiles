@@ -11,9 +11,10 @@ keymap('i', 'jj', '<Esc>', opts)
 
 -- Telescope keymaps
 keymap('n', '<leader>ff', ':Telescope find_files<cr>', opts)
+keymap('n', '<leader>e', ':Telescope find_files<cr>', opts)
 
 -- Netrw(file manager) keymaps
-keymap('n', '<leader>e', ':20Lex<cr>', opts)
+-- keymap('n', '<leader>e', ':20Lex<cr>', opts)
 
 -- Lsp keymaps
 keymap('n', 'gD', '<cmd>lua vim.lsp.buf.declaration()<CR>', opts)

@@ -50,6 +50,12 @@ require('packer').startup(function()
         requires = "nvim-lua/plenary.nvim"
     }
 
+    -- My statusbar
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
+
 end)
 
 -- Lsp config
@@ -63,3 +69,6 @@ require("plugins.cmp")
 
 -- Tresitter config
 require("plugins.treesitter")
+
+-- My statusbar config
+require("plugins.lualine")

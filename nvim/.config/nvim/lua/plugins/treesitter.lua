@@ -4,7 +4,6 @@ require'nvim-treesitter.configs'.setup {
     enable = true
   },
   highlight = {
-    enable = true,              -- false will disable the whole extension
-    disable = { "c", "rust" },  -- list of language that will be disabled
+    enable = true              -- false will disable the whole extension
   },
 }
