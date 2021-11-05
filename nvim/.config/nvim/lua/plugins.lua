@@ -24,7 +24,7 @@ require('packer').startup(function()
 
     -- Langauge autocompletion, error linting
     use 'neovim/nvim-lspconfig'
-    use 'glepnir/lspsaga.nvim'
+    use { 'tami5/lspsaga.nvim', branch = 'nvim51' }
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'

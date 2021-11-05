@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/glepnir/lspsaga.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/lualine.nvim",
