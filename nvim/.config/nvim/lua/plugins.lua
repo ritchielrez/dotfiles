@@ -5,7 +5,6 @@ require('packer').startup(function()
     -- My favourite themes
     use 'sainnhe/gruvbox-material'
     -- use 'gruvbox-community/gruvbox'
-    use 'RRethy/nvim-base16'
     use 'ChristianChiarulli/nvcode-color-schemes.vim'
 
     -- Syntax highlighting
