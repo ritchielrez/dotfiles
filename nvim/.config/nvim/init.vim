@@ -4,4 +4,3 @@ colorscheme gruvbox-material
 
 " set signcolumn=yes
 
-

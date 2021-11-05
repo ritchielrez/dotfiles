@@ -24,6 +24,7 @@ require('packer').startup(function()
 
     -- Langauge autocompletion, error linting
     use 'neovim/nvim-lspconfig'
+    use 'glepnir/lspsaga.nvim'
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
@@ -41,11 +42,11 @@ require('packer').startup(function()
         '!vim'; -- Exclude vim from highlighting.
         -- Exclusion Only makes sense if '*' is specified!
         }
-    end
+        end
     }
 
     -- Note taking
-    use { 
+    use {
         "nvim-neorg/neorg",
         requires = "nvim-lua/plenary.nvim"
     }
@@ -54,6 +55,12 @@ require('packer').startup(function()
     use {
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    }
+
+    -- My tabline
+    use {
+        'akinsho/bufferline.nvim',
+        requires = {'kyazdani42/nvim-web-devicons', opt=true}
     }
 
 end)
@@ -72,3 +79,6 @@ require("plugins.treesitter")
 
 -- My statusbar config
 require("plugins.lualine")
+
+-- My tabline config
+require("plugins.bufferline")
