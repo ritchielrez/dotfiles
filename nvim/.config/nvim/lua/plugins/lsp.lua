@@ -35,7 +35,7 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
-local lspsaga = require 'lspsaga'
+local lspsaga = require("lspsaga")
 lspsaga.init_lsp_saga { -- defaults ...
   debug = false,
   use_saga_diagnostic_sign = true,
