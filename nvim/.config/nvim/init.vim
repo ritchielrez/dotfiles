@@ -1,5 +1,5 @@
 lua require("init")
 
-colorscheme gruvbox-material
+colorscheme nord
 
 " set signcolumn=yes
