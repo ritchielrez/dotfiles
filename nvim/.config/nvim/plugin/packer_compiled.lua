@@ -71,84 +71,104 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["auto-pairs"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/auto-pairs"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-buffer"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-cmdline"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-path"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-path",
+    url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-vsnip"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-vsnip"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/cmp-vsnip",
+    url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["gruvbox-material"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/gruvbox-material"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   neorg = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/neorg"
-  },
-  ["neorg-telescope"] = {
-    loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/neorg-telescope"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/neorg",
+    url = "https://github.com/nvim-neorg/neorg"
   },
   ["nvcode-color-schemes.vim"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
-  },
-  ["nvim-base16"] = {
-    loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-base16"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim",
+    url = "https://github.com/ChristianChiarulli/nvcode-color-schemes.vim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-cmp"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-colorizer.lua"] = {
     config = { "\27LJ\1\2F\0\0\2\0\4\0\a4\0\0\0%\1\1\0>\0\2\0027\0\2\0003\1\3\0>\0\2\1G\0\1\0\1\3\0\0\6*\t!vim\nsetup\14colorizer\frequire\0" },
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-vsnip"] = {
     loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  vimwiki = {
-    loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vimwiki"
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/vim-vsnip",
+    url = "https://github.com/hrsh7th/vim-vsnip"
   }
 }
 

@@ -23,9 +23,9 @@ vim.bo.swapfile = false
 vim.g.mapleader = " "
 vim.b.mapleader = " "
 
--- Termguicolors is needed for colorizer plugin
+-- Termguicolors is needed for nvim-colorizer, which is gonna show the color codes
 vim.o.termguicolors = true
-vim.g.termguicolors = true
+vim.b.termguicolors = true
 
 -- Signcolumn is a column where we could see the erros signs
 vim.o.signcolumn = "yes"
