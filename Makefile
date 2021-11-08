@@ -38,6 +38,13 @@ ubuntu_compile_apps:
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 	figlet -c "Installed packer.nvim" | lolcat
 
+app_init: 
+	gh auth login
+		
+	wget https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh
+	chmod a+x install.sh
+	./install.sh
+	rm install.sh
 
 
 	
