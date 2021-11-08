@@ -26,7 +26,17 @@ ubuntu_compile_apps:
 	sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen -y
 	figlet -c "Neovim deps installed" | lolcat
 
-	
+	if [ -v /usr/local/bin/nvim ] 
+	then
+		echo "nvim installed"
+	fi
+	#cd /tmp/neovim && make -j4	
+	#sudo make install
+	figlet -c "Neovim compiled and installed" | lolcat
+
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+	figlet -c "Installed packer.nvim" | lolcat
 
 
 
