@@ -53,8 +53,8 @@ alt + z
 alt + n
   ferdi
 
-super + b 
-  bitwarden
+super + b
+  ~/.local/share/zap/v2/bitwarden
 
 ctrl + alt + s
   flameshot gui
