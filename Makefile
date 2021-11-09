@@ -1,5 +1,3 @@
-NEOVIM_DIR := "/tmp/neovim"
-
 .ONESHELL:
 SHELL := /bin/bash
 
@@ -29,9 +27,9 @@ ubuntu_install:
 	make ubuntu_compile_apps
 	
 ubuntu_compile_apps:
-	if [ -d $(NEOVIM_DIR) ]
+	if [ ! -d "~/repos/neovim" ]
 	then
-		git clone https://github.com/neovim/neovim/ --depth 1 /tmp/neovim 
+		git clone https://github.com/neovim/neovim/ --depth 1 ~/repos/neovim 
 	fi
 	figlet -c "Neovim cloned" | lolcat
 
@@ -40,15 +38,18 @@ ubuntu_compile_apps:
 
 	if [ -v /usr/local/bin/nvim ] 
 	then
-		echo "nvim installed"
+		cd $HOME/repos/neovim && make -j4	
+		sudo make install
 	fi
-	#cd /tmp/neovim && make -j4	
-	#sudo make install
 	figlet -c "Neovim compiled and installed" | lolcat
-
-	git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+	
+	if [ ! -d "~/.local/share/nvim/site/pack/packer/start/packer" ]
+	then
+		git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+	fi
 	figlet -c "Installed packer.nvim" | lolcat
+
+
 
 app_init: 
 	gh auth login
