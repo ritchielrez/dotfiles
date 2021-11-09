@@ -44,9 +44,9 @@ killall emacs
 sxhkd &
 
 # Wallpaper
-nitrogen --restore &
+# nitrogen --restore &
 # wpg -s /home/ritux/Documents/repos/wallpapers/maller/pyramid.jpg
-# feh --bg-fill ~/Pictures/photo-1530890289114-8385d3901f84.jpg
+feh --bg-fill ~/Pictures/wallpaperflare.com_wallpaper.jpg
 #feh --bg-fill ~/Pictures/wallpapers/wallpapers/maller/astronomy.jpg
 
 # Compositor
