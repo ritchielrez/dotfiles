@@ -18,14 +18,15 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #32302F
-background-alt = #3c3836
+background = #1a1b26
+background-alt = #32344a
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfbf8e
-foreground-alt = #928374
-primary = #689d6a
-secondary = #89b482
-alert = #ea6962
+;foreground = #787c99
+foreground = #a9b1d6
+foreground-alt = #787c99
+primary = #444b6a
+secondary = #7aa2f7
+alert = #ff7a93
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
