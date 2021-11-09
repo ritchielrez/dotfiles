@@ -5,10 +5,18 @@ SHELL := /bin/bash
 
 ubuntu_install:
 	sudo apt install software-properties-common curl wget unzip stow git figlet ruby -y
+
 	curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo gpg --dearmor -o /usr/share/keyrings/githubcli-archive-keyring.gpg
 	echo "deb [arch=amd64 signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
 	sudo apt update
 	sudo apt install gh -y
+
+	sudo apt install bspwm -y
+	sudo apt autoremove lemonbar -y
+
+	sudo add-apt-repository -y ppa:kgilmer/speed-ricer -y
+	sudo apt update 
+	sudo apt install polybar -y
 
 	sudo gem install lolcat
 

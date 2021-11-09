@@ -4,6 +4,7 @@ require('packer').startup(function()
 
     -- My favourite themes
     use 'sainnhe/gruvbox-material'
+    use 'folke/tokyonight.nvim'
     -- use 'gruvbox-community/gruvbox'
     use 'ChristianChiarulli/nvcode-color-schemes.vim'
 
@@ -82,3 +83,6 @@ require("plugins.lualine")
 
 -- My tabline config
 require("plugins.bufferline")
+
+-- My tokyonight colorscheme config
+require("plugins.tokyonight")

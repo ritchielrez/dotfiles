@@ -150,7 +150,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 7
+  size: 12
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -357,7 +357,7 @@ font:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1
+window.opacity: 0.8
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -877,37 +877,37 @@ shell:
     #white:   '0xdfbf8e'
 
 # TokyoNight theme
-#schemes:
+schemes:
 ##  # Tokyo Night theme, based on both:
 ##  #   https://github.com/ghifarit53/tokyonight-vim
 ##  #   https://github.com/enkia/tokyo-night-vscode-theme
-#  tokyo-night: &tokyo-night
-#    # Default colors
-#    primary:
-#      background: '0x1a1b26'
-#      foreground: '0xa9b1d6'
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xa9b1d6'
 #
 #   # Normal colors
-#    normal:
-#      black:   '0x32344a'
-#      red:     '0xf7768e'
-#      green:   '0x9ece6a'
-#      yellow:  '0xe0af68'
-#      blue:    '0x7aa2f7'
-#      magenta: '0xad8ee6'
-#      cyan:    '0x449dab'
-#      white:   '0x787c99'
-##  # Bright colors
-#    bright:
-#      black:   '0x444b6a'
-#      red:     '0xff7a93'
-#      green:   '0xb9f27c'
-#      yellow:  '0xff9e64'
-#      blue:    '0x7da6ff'
-#      magenta: '0xbb9af7'
-#      cyan:    '0x0db9d7'
-#      white:   '0xacb0d0'
-#
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x787c99'
+#  # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
 #  tokyo-night-storm: &tokyo-night-storm
 #    # Default colors
 #    primary:
@@ -986,6 +986,4 @@ shell:
 #    white: '#aeb3bb'
 #
 #
-import:
-  -  ~/.config/alacritty/nord.yml
-
+colors: *tokyo-night

@@ -1,5 +1,5 @@
 lua require("init")
 
-colorscheme nord
+colorscheme tokyonight
 
 " set signcolumn=yes
