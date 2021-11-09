@@ -18,6 +18,10 @@ ubuntu_install:
 	sudo apt update 
 	sudo apt install polybar -y
 
+	sudo add-apt-repository ppa:aslatter/ppa -y
+	sudo apt update
+	sudo apt install alacritty -y
+
 	sudo gem install lolcat
 
 	figlet -c "Installed all the ubuntu packages" | lolcat
@@ -48,11 +52,37 @@ ubuntu_compile_apps:
 
 app_init: 
 	gh auth login
-		
-	wget https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh
-	chmod a+x install.sh
-	./install.sh
-	rm install.sh
 
+	if [ -d "~/.oh-my-bash" ]
+	then
+		wget https://raw.github.com/ohmybash/oh-my-bash/master/tools/install.sh
+		chmod a+x install.sh
+		./install.sh
+		rm install.sh
+	fi
 
-	
+	if [ ! -d "~/.config/polybar" ]	
+	then
+		stow -vSt ~ polybar-minimal
+	fi
+
+	if [ ! -d "~/.config/bspwm/" ]	
+	then
+		stow -vSt ~ bspwm
+	fi
+
+	if [ ! -d "~/.config/sxhkd" ]	
+	then
+		stow -vSt ~ sxhkd
+	fi
+
+	if [ ! -d "~/.config/alacritty" ]	
+	then
+		stow -vSt ~ alacritty
+	fi
+
+test_app_init:
+	if [ ! -d "~/.config/sway" ]
+	then
+		stow -vSt ~ sway
+	fi
