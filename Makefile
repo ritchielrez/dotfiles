@@ -1,5 +1,5 @@
 .ONESHELL:
-SHELL := /bin/bash
+SHELL = /bin/bash
 
 ubuntu_install:
 	sudo apt install software-properties-common curl wget unzip stow git figlet ruby -y
@@ -25,9 +25,9 @@ ubuntu_install:
 	figlet -c "Installed all the ubuntu packages" | lolcat
 
 	make ubuntu_compile_apps
-	
+
 ubuntu_compile_apps:
-	if [ ! -d "~/repos/neovim" ]
+	if [ -d "~/repos/neovim" ]
 	then
 		git clone https://github.com/neovim/neovim/ --depth 1 ~/repos/neovim 
 	fi
@@ -43,12 +43,24 @@ ubuntu_compile_apps:
 	fi
 	figlet -c "Neovim compiled and installed" | lolcat
 	
-	if [ ! -d "~/.local/share/nvim/site/pack/packer/start/packer" ]
+	if [ -d "~/.local/share/nvim/site/pack/packer/start/packer" ]
 	then
 		git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 	fi
 	figlet -c "Installed packer.nvim" | lolcat
 
+	if [ -d "~/repos/lua-language-server" ]	
+	then
+		git clone https://github.com/sumneko/lua-language-server ~/repos/lua-language-server --recursive
+	fi
+	figlet -c "Cloned lua-language-server" | lolcat
+	
+	if [ ! -d "~/repos/lua-language-server/bin" ]
+	then
+	 	sh -c "cd ~/repos/lua-language-server/3rd/luamake/ && ./compile/install.sh && cd ../../ && ./3rd/luamake/luamake rebuild"
+	fi
+	figlet -c "Compiled lua-language-server" | lolcat
+	
 
 
 app_init: 
