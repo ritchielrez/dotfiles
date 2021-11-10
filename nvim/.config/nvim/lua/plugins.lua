@@ -4,6 +4,7 @@ require('packer').startup(function()
 
     -- My favourite themes
     use 'sainnhe/gruvbox-material'
+    use 'folke/tokyonight.nvim'
     -- use 'gruvbox-community/gruvbox'
     use 'ChristianChiarulli/nvcode-color-schemes.vim'
 
@@ -24,7 +25,7 @@ require('packer').startup(function()
 
     -- Langauge autocompletion, error linting
     use 'neovim/nvim-lspconfig'
-    use { 'tami5/lspsaga.nvim', branch = 'nvim51' }
+    use 'tami5/lspsaga.nvim'
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
@@ -82,3 +83,6 @@ require("plugins.lualine")
 
 -- My tabline config
 require("plugins.bufferline")
+
+-- My tokyonight colorscheme config
+require("plugins.tokyonight")
