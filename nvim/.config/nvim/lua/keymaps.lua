@@ -34,6 +34,7 @@ keymap("n", 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
 keymap("n", '<space>er', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
 
+
 keymap("n", "gr", "<cmd>Lspsaga rename<cr>", {silent = true, noremap = true})
 keymap("n", "gx", "<cmd>Lspsaga code_action<cr>", {silent = true, noremap = true})
 keymap("x", "gx", ":<c-u>Lspsaga range_code_action<cr>", {silent = true, noremap = true})
