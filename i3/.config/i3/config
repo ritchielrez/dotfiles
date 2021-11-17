@@ -47,7 +47,7 @@ exec --no-startup-id alttab
 exec --no-startup-id mate-polkit
 
 # Start polybar at startup
-exec --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 # Start xfce4-panel at startup
 # exec --no-startup-id ~/.config/xfce4/launch
