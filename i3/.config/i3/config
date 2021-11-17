@@ -226,6 +226,7 @@ for_window [class="^.*"] border pixel 2
 # defining inner and outer window gaps
 gaps inner 10
 gaps outer 15
+gaps top 30
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #689d6a #689d6a #ebdbb2 #689d6a   #689d6a
