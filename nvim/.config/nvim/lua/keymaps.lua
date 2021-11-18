@@ -34,13 +34,7 @@ keymap("n", 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
 keymap("n", '<space>er', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
 
-
-keymap("n", "gr", "<cmd>Lspsaga rename<cr>", {silent = true, noremap = true})
-keymap("n", "gx", "<cmd>Lspsaga code_action<cr>", {silent = true, noremap = true})
-keymap("x", "gx", ":<c-u>Lspsaga range_code_action<cr>", {silent = true, noremap = true})
-keymap("n", "K",  "<cmd>Lspsaga hover_doc<cr>", {silent = true, noremap = true})
-keymap("n", "go", "<cmd>Lspsaga show_line_diagnostics<cr>", {silent = true, noremap = true})
-keymap("n", "gj", "<cmd>Lspsaga diagnostic_jump_next<cr>", {silent = true, noremap = true})
-keymap("n", "gk", "<cmd>Lspsaga diagnostic_jump_prev<cr>", {silent = true, noremap = true})
-keymap("n", "<C-u>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1)<cr>", opts)
-keymap("n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<cr>", opts)
+vim.cmd("let g:floaterm_keymap_new = '<F7>'")
+vim.cmd("let g:floaterm_keymap_prev   = '<F8>'")
+vim.cmd("let g:floaterm_keymap_next   = '<F9>'")
+vim.cmd("let g:floaterm_keymap_toggle = '<leader>t'")

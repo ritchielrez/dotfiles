@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
-  ["lspsaga.nvim"] = {
-    loaded = true,
-    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/tami5/lspsaga.nvim"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -145,6 +140,11 @@ _G.packer_plugins = {
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-lsputils"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-lsputils",
+    url = "https://github.com/RishabhRD/nvim-lsputils"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -164,6 +164,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  popfix = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/popfix",
+    url = "https://github.com/RishabhRD/popfix"
   },
   ["telescope.nvim"] = {
     loaded = true,

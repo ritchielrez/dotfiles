@@ -25,7 +25,8 @@ require('packer').startup(function()
 
     -- Langauge autocompletion, error linting
     use 'neovim/nvim-lspconfig'
-    use 'tami5/lspsaga.nvim'
+    use 'RishabhRD/popfix'
+    use 'RishabhRD/nvim-lsputils'
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
@@ -64,6 +65,8 @@ require('packer').startup(function()
         requires = {'kyazdani42/nvim-web-devicons', opt=true}
     }
 
+    -- Terminal
+    use 'voldikss/vim-floaterm'
 end)
 
 -- Lsp config
