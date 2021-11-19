@@ -67,6 +67,10 @@ require('packer').startup(function()
 
     -- Terminal
     use 'voldikss/vim-floaterm'
+
+    -- Git
+    use 'tpope/vim-fugitive'
+
 end)
 
 -- Lsp config
