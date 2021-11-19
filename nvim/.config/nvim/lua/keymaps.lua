@@ -37,4 +37,4 @@ keymap("n", '<space>er', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR
 vim.cmd("let g:floaterm_keymap_new = '<F7>'")
 vim.cmd("let g:floaterm_keymap_prev   = '<F8>'")
 vim.cmd("let g:floaterm_keymap_next   = '<F9>'")
-vim.cmd("let g:floaterm_keymap_toggle = '<leader>t'")
+vim.cmd("let g:floaterm_keymap_toggle = '<F6>'")
