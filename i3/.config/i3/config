@@ -13,7 +13,7 @@ set $mod Mod4
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango: CaskaydiaCove Nerd Font 10
+font pango: UbuntuMono Nerd Font 10
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -176,7 +176,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -222,20 +222,21 @@ bindsym $mod+r mode "resize"
 
 # Remove i3wm default titlebar
 for_window [class="^.*"] border pixel 2
+for_window [class="zoom"] border pixel 4
 
 # defining inner and outer window gaps
-gaps inner 10
-gaps outer 15
+gaps inner 20
+gaps outer 25
 gaps top 30
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #689d6a #689d6a #ebdbb2 #689d6a   #689d6a
-client.focused_inactive #d5c4a1 #d5c4a1 #282828 #d5c4a1   #d5c4a1
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+client.focused          #7aa2f7 #7aa2f7 #a9b1d6 #7aa2f7   #7aa2f7
+client.focused_inactive #444b6a #444b6a #282828 #444b6a   #444b6a
+client.unfocused        #444b6a #444b6a #888888 #292d2e   #444b6a
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
-client.background       #ffffff
+client.background       #a9b1d6
 
 bindsym $mod+Mod1+s exec flameshot gui
 
@@ -254,5 +255,6 @@ set $i3l spiral 0.6 to workspace $ws6
 set $i3l spiral 0.6 to workspace $ws7
 set $i3l spiral 0.6 to workspace $ws8
 set $i3l spiral 0.6 to workspace $ws9
+set $i3l spiral 0.6 to workspace $ws10
 
 exec_always $HOME/.local/bin/i3-layouts
