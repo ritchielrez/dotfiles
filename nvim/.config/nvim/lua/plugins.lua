@@ -1,3 +1,10 @@
+-- This is installs packer.nvim if it isn't already installed
+local fn = vim.fn
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+if fn.empty(fn.glob(install_path)) > 0 then
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+end
+
 require('packer').startup(function()
     -- To manage the package manager itself
     use 'wbthomason/packer.nvim'
@@ -73,6 +80,11 @@ require('packer').startup(function()
 
     -- Git
     use 'tpope/vim-fugitive'
+
+    -- If packer is installed for the first time, then install all the plugins with it
+    if packer_bootstrap then
+        require('packer').sync()
+    end
 
 end)
 
