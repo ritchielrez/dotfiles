@@ -21,8 +21,11 @@ require('packer').startup(function()
     -- Tresitter, a next gen syntax parser, mainly used to theme code properly
     use 'nvim-treesitter/nvim-treesitter'
 
-    -- Auto pairs
-    use 'jiangmiao/auto-pairs'
+    -- Auto pair up brackets
+    use 'tpope/vim-surround'
+
+    -- Comment and uncomment stuffs quickly
+    use 'tpope/vim-commentary'
 
     -- My fuzzy file finder
     use {
