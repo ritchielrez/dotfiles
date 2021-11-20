@@ -46,3 +46,6 @@ keymap("n", "gf", "<cmd>edit <cfile><CR>", {})
 -- Reselect visual selection after indenting
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
+
+-- I want to save files which I have no access to write
+keymap("c", "w!!", "%!sudo tee > /dev/null %", {})
