@@ -988,5 +988,5 @@ schemes:
 #
 colors: *tokyo-night
 
-#import:
-#- ~/.config/alacritty/gruvbox_material.yml
+        #import:
+  #  - ~/.config/alacritty/dracula.yml

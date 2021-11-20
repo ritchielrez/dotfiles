@@ -170,6 +170,11 @@ _G.packer_plugins = {
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/popfix",
     url = "https://github.com/RishabhRD/popfix"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/home/ritux/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/ritux/.local/share/nvim/site/pack/packer/start/telescope.nvim",

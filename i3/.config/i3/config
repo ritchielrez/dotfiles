@@ -239,7 +239,7 @@ client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #a9b1d6
 
-bindsym $mod+Mod1+s exec flameshot gui
+bindsym Mod1+d exec discord
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad

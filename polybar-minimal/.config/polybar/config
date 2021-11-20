@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #1a1b26aa
+background = #1a1b21aa
 background-alt = #32344a
 ;foreground = ${xrdb:color7:#222}
 ;foreground = #787c99
@@ -57,12 +57,16 @@ font-1 = Symbola:scale=:5;2
 
 modules-left = bspwm i3
 modules-center = date
-modules-right = audio wlan eth battery
+modules-right = audio wlan eth battery 
 
 tray-position = right
 tray-padding = 0
+tray-margin = 1
 tray-maxsize = 24
-;tray-background = #0063ff
+tray-background = ${colors.background}
+tray-scale = 1
+tray-offset-x = 0
+tray-offset-y = 0
 
 ;wm-restack = bspwm
 wm-restack = i3
@@ -224,7 +228,7 @@ type = internal/network
 interface = wlo1
 interval = 3.0
 
-format-connected = <ramp-signal> <label-connected>
+format-connected = "<ramp-signal> <label-connected>"
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
@@ -252,7 +256,7 @@ format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
-format-disconnected =
+format-disconnected = ""
 ;format-disconnected = <label-disconnected>
 ;format-disconnected-underline = ${self.format-connected-underline}
 ;label-disconnected = %ifname% disconnected
@@ -348,7 +352,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
+full-at = 100
 
 format-charging = "<animation-charging> <label-charging> "
 format-charging-underline = #ffb52a
@@ -391,6 +395,8 @@ animation-discharging-3 = " "
 animation-discharging-4 = " "
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
+
+padding-right = 2
 
 [module/temperature]
 type = internal/temperature

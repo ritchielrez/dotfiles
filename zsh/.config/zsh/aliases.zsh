@@ -3,7 +3,7 @@ alias so="source ~/.zshrc"
 
 alias cd="pushd"
 
-alias sc="pushd ~/Pictures/Screenshots"
+alias sc="pushd ~/Pictures/screenshots"
 alias dot="pushd ~/repos/dotfiles/"
 alias dwd="pushd ~/.config/suckless/dwm"
 
@@ -24,32 +24,29 @@ alias config='/usr/bin/git --git-dir=/mnt/c/Repos/dotfiles-new --work-tree=$HOME
 alias e="exit"
 alias t="tmux"
 
-alias dots="cd ~/Documents/repos/dotfiles"
-
 alias md="mkdir"
 
 alias spicetify="~/spicetify-cli/spicetify"
 
 alias gs="git status | lolcat"
-alias ga="git add . | lolcat"
+alias ga="git add ."
 
 function gc()
 {
-  git commit -m "$1" | lolcat
+  git commit -m "$1"
 }
-alias gp="git push -u --force origin master | lolcat"
 
 function gac()
 {
-    git add . | lolcat
-    git commit -m "$1" | lolcat
+    git add . 
+    git commit -m "$1"
 }
 
 function gacp()
 {
-	git add . | lolcat
-	git commit -m "$1" | lolcat
-	git push -u --force origin $2 | lolcat
+	git add . 
+	git commit -m "$1"
+	git push -u --force origin $2
 }
 
 ### ARCHIVE EXTRACTION
