@@ -32,6 +32,7 @@ alias spicetify="~/spicetify-cli/spicetify"
 
 alias gs="git status | lolcat"
 alias ga="git add . | lolcat"
+
 function gc()
 {
   git commit -m "$1" | lolcat
@@ -48,7 +49,7 @@ function gacp()
 {
 	git add . | lolcat
 	git commit -m "$1" | lolcat
-	git push -u --force origin master | lolcat
+	git push -u --force origin $2 | lolcat
 }
 
 ### ARCHIVE EXTRACTION

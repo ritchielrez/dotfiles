@@ -24,6 +24,8 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=1000
 setopt SHARE_HISTORY
+bindkey '^[[A' up-line-or-search
+bindkey '^[[B' down-line-or-search
 
 # if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   # source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
