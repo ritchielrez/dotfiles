@@ -33,4 +33,5 @@ vim.b.termguicolors = true
 vim.o.signcolumn = "yes"
 vim.wo.signcolumn = "yes"
 
-
+-- My colorscheme of choice
+vim.g.colors_name = 'tokyonight'

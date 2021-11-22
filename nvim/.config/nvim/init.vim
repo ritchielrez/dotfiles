@@ -1,5 +1,5 @@
 " Load up my lua config
 lua require("init") 
 
-colorscheme tokyonight
+" colorscheme tokyonight
 " set signcolumn=yes

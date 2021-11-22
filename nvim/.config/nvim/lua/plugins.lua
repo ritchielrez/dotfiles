@@ -22,7 +22,7 @@ require('packer').startup(function()
     use 'nvim-treesitter/nvim-treesitter'
 
     -- Auto pair up brackets
-    use 'tpope/vim-surround'
+    use 'jiangmiao/auto-pairs'
 
     -- Comment and uncomment stuffs quickly
     use 'tpope/vim-commentary'
