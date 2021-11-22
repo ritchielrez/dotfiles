@@ -3,7 +3,7 @@ local opts = { noremap = true, silent=true }
 
 -- Editor keymaps related to apply config, save current file and quit the editor
 keymap("n", '<leader>s', ':so ~/.config/nvim/init.vim<cr>', opts)
-keymap("n", '<leader>w', ':w<cr>', opts)
+keymap("n", '<leader>ww', ':w<cr>', opts)
 keymap("n", '<leader>q', ':q<cr>', opts)
 
 -- Quit insert mode faster

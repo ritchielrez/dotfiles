@@ -11,7 +11,7 @@ require('packer').startup(function()
     -- Syntax highlighting
     -- use 'sheerun/vim-polyglot'
 
-    -- Tresitter, a next gen syntax parser, mainly used to theme properly
+    -- Tresitter, a next gen syntax parser, mainly used to theme code properly
     use 'nvim-treesitter/nvim-treesitter'
 
     -- Auto pairs
@@ -39,7 +39,7 @@ require('packer').startup(function()
     -- To enable more of the features of rust-analyzer, such as inlay hints and more!
     use 'simrat39/rust-tools.nvim'
 
-    -- Show me color codes live
+    -- Show me color codes in my editor
     use {
         'norcalli/nvim-colorizer.lua',
         config = function() require 'colorizer'.setup {
@@ -56,13 +56,13 @@ require('packer').startup(function()
         requires = "nvim-lua/plenary.nvim"
     }
 
-    -- My statusbar
+    -- My statusline at the bottom
     use {
         'nvim-lualine/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
 
-    -- My tabline
+    -- My tabline at the top
     use {
         'akinsho/bufferline.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt=true}
