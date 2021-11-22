@@ -987,3 +987,6 @@ schemes:
 #
 #
 colors: *tokyo-night
+
+#import:
+#- ~/.config/alacritty/gruvbox_material.yml

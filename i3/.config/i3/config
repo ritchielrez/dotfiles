@@ -37,8 +37,9 @@ exec --no-startup-id xfce4-power-manager
 # Set the wallpaper
 exec --no-startup-id nitrogen --restore
 
-# Autostart picom compositor
-# exec --no-startup-id picom 
+# Autostart compositor
+#exec_always picom --experimental-backends 
+exec_always compton
 
 # Autostart alttab for window switching
 exec --no-startup-id alttab

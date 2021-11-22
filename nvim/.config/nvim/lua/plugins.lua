@@ -36,6 +36,9 @@ require('packer').startup(function()
     use 'hrsh7th/cmp-vsnip'
     use 'hrsh7th/vim-vsnip'
 
+    -- To enable more of the features of rust-analyzer, such as inlay hints and more!
+    use 'simrat39/rust-tools.nvim'
+
     -- Show me color codes live
     use {
         'norcalli/nvim-colorizer.lua',
