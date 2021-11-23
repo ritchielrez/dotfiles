@@ -18,7 +18,7 @@
 
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #1a1b21aa
+background = #1a1b30
 background-alt = #32344a
 ;foreground = ${xrdb:color7:#222}
 ;foreground = #787c99
@@ -30,7 +30,7 @@ alert = #ff7a93
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
+width = 99%
 height = 25
 ;offset-x = 1%
 ;offset-y = 1%
@@ -58,6 +58,9 @@ font-1 = Symbola:scale=:5;2
 modules-left = bspwm i3
 modules-center = date
 modules-right = audio wlan eth battery 
+
+offset-x = 10
+offset-y = 12
 
 tray-position = right
 tray-padding = 0
