@@ -38,8 +38,8 @@ exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nitrogen --restore
 
 # Autostart compositor
-#exec_always picom --experimental-backends 
-exec_always compton
+exec_always picom --experimental-backends 
+#exec_always compton
 
 # Autostart alttab for window switching
 exec --no-startup-id alttab
@@ -229,6 +229,7 @@ for_window [class="zoom"] border pixel 4
 gaps inner 20
 gaps outer 25
 gaps top 30
+gaps bottom 0
 
 # class                 border  backgr. text    indicator child_border
 client.focused          #7aa2f7 #7aa2f7 #a9b1d6 #7aa2f7   #7aa2f7

@@ -31,7 +31,7 @@ alert = #ff7a93
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 99%
-height = 25
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -57,19 +57,20 @@ font-1 = Symbola:scale=:5;2
 
 modules-left = bspwm i3
 modules-center = date
-modules-right = audio wlan eth battery 
+modules-right = audio wlan eth custom-battery 
 
 offset-x = 10
-offset-y = 12
+offset-y = 10
 
+tray-detached = false
+tray-offset-x = 0
+tray-offset-y = 0
 tray-position = right
 tray-padding = 0
-tray-margin = 1
+tray-margin = 2
 tray-maxsize = 24
 tray-background = ${colors.background}
 tray-scale = 1
-tray-offset-x = 0
-tray-offset-y = 0
 
 ;wm-restack = bspwm
 wm-restack = i3
@@ -365,7 +366,6 @@ format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}"
-format-full-underline = ${self.format-charging-underline}
 
 ;ramp-capacity-0 = 
 ;ramp-capacity-1 = 
@@ -399,7 +399,9 @@ animation-discharging-4 = " "
 animation-discharging-foreground = ${colors.foreground-alt}
 animation-discharging-framerate = 750
 
-padding-right = 2
+[module/custom-battery]
+type = custom/script
+exec = "$HOME/.local/bin/battery"
 
 [module/temperature]
 type = internal/temperature

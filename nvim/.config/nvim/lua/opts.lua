@@ -4,10 +4,6 @@
 vim.wo.number = true
 vim.wo.relativenumber = true
 
--- Configure filetypes
-vim.cmd("filetype plugin on")
-vim.cmd("filetype indent on")
-
 -- Let's set up the tabs!!
 vim.o.expandtab = true
 vim.bo.expandtab = true

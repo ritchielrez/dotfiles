@@ -84,12 +84,20 @@ require('packer').startup(function()
     -- Git
     use 'tpope/vim-fugitive'
 
+    -- Start screen of neovim
+    use {
+        'goolord/alpha-nvim',
+        requires = { 'kyazdani42/nvim-web-devicons' }
+    }
     -- If packer is installed for the first time, then install all the plugins with it
     if packer_bootstrap then
         require('packer').sync()
     end
 
 end)
+
+-- My start screen config
+require("plugins.alpha")
 
 -- Lsp config
 require("plugins.lsp")
