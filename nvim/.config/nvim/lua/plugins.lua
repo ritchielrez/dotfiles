@@ -89,6 +89,10 @@ require('packer').startup(function()
         'goolord/alpha-nvim',
         requires = { 'kyazdani42/nvim-web-devicons' }
     }
+    
+    -- Show off that I'm coding
+    use 'andweeb/presence.nvim'
+
     -- If packer is installed for the first time, then install all the plugins with it
     if packer_bootstrap then
         require('packer').sync()
