@@ -93,6 +93,10 @@ require('packer').startup(function()
     -- Editorconfig is used for formatting documents
     use 'editorconfig/editorconfig-vim'
 
+    -- Debugger
+    use 'puremourning/vimspector'
+    use 'szw/vim-mazimizer'
+
     -- If packer is installed for the first time, then install all the plugins with it
     if packer_bootstrap then
         require('packer').sync()

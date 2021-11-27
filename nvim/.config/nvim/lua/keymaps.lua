@@ -34,12 +34,6 @@ keymap("n", 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 
 keymap("n", '<space>er', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
 
--- Floaterm keymaps to show me a floating terminal inside neovim, then close it
-vim.cmd("let g:floaterm_keymap_new = '<F7>'")
-vim.cmd("let g:floaterm_keymap_prev   = '<F8>'")
-vim.cmd("let g:floaterm_keymap_next   = '<F9>'")
-vim.cmd("let g:floaterm_keymap_toggle = '<F6>'")
-
 -- Allow gf to open non-existent files
 keymap("n", "gf", "<cmd>edit <cfile><CR>", {})
 
