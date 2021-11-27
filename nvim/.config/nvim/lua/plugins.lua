@@ -85,13 +85,13 @@ require('packer').startup(function()
     use 'tpope/vim-fugitive'
 
     -- Start screen of neovim
-    use {
-        'goolord/alpha-nvim',
-        requires = { 'kyazdani42/nvim-web-devicons' }
-    }
-    
+    use 'glepnir/dashboard-nvim'
+
     -- Show off that I'm coding
     use 'andweeb/presence.nvim'
+
+    -- Editorconfig is used for formatting documents
+    use 'editorconfig/editorconfig-vim'
 
     -- If packer is installed for the first time, then install all the plugins with it
     if packer_bootstrap then
@@ -99,9 +99,6 @@ require('packer').startup(function()
     end
 
 end)
-
--- My start screen config
-require("plugins.alpha")
 
 -- Lsp config
 require("plugins.lsp")
@@ -123,3 +120,4 @@ require("plugins.bufferline")
 
 -- My tokyonight colorscheme config
 require("plugins.tokyonight")
+
