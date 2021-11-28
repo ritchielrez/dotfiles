@@ -17,16 +17,17 @@ Dotfiles are the customization files that are used to personalize your Linux or 
 
 ## Configs of mine: 
 
-1. bspwm ( *my current window manager* )
-2. i3-gaps ( *I don't use it anymore* )
-3. xfce4-panel ( *I don't use it anymore* )
-4. dunst ( *notification daemon* )
-5. picom ( *the program that adds transparency to bspwm and i3* )
-6. sxhkd ( *hotkey daemon* )
-7. polybar ( *the panel on the top* )
-8. neovim ( *for python development* )
-9. vim
-10. zsh ( *with zsh-autosuggestions, zsh-syntax-highlighting, custom zsh prompt* )
+1. bspwm ( *my second choice of window manager* )
+2. sway ( *my current window manager* ) 
+3. i3-gaps ( *I don't use it anymore* )
+4. xfce4-panel ( *I don't use it anymore* )
+5. dunst ( *notification daemon* )
+6. picom ( *the program that adds transparency to bspwm and i3* )
+7. sxhkd ( *hotkey daemon* )
+8. polybar ( *the panel on the top* )
+9. neovim ( *for python development* )
+10. vim
+11. zsh ( *with zsh-autosuggestions, zsh-syntax-highlighting, custom zsh prompt* )
 
 
 
